@@ -1,0 +1,6 @@
+{
+  "name": "Extension",
+  "permissions":[
+    "assets/*"
+  ]
+}

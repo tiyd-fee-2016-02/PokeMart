@@ -1,0 +1,116 @@
+[
+  {
+    "name": "Pokéball",
+    "price": "&#8377;200",
+    "description": "catch em all",
+    "picture_url": "http://pokeapi.co/media/sprites/items/poke-ball.png"
+  },
+  {
+    "name": "Ultra Ball",
+    "price": "&#8377;1200",
+    "description": "catch more wild pokemon",
+    "picture_url": "http://pokeapi.co/media/sprites/items/ultra-ball.png"
+  },
+  {
+    "name": "Super Potion",
+    "price": "&#8377;700",
+    "description": "heal your wounded pokefriends",
+    "picture_url": "http://pokeapi.co/media/sprites/items/super-potion.png"
+  },
+  {
+    "name": "Max Potion",
+    "price": "&#8377;2500",
+    "description": "heal your wounded pokefriends to the max!!",
+    "picture_url": "http://pokeapi.co/media/sprites/items/max-potion.png"
+  },
+  {
+    "name": "Revive",
+    "price": "&#8377;1500",
+    "description": "Revive your pokemon and bring back to half health",
+    "picture_url": "http://pokeapi.co/media/sprites/items/revive.png"
+  },
+  {
+    "name": "Parlyz Heal",
+    "price": "&#8377;200",
+    "description": "Give your paralyzed friend some mobility!",
+    "picture_url": "http://pokeapi.co/media/sprites/items/paralyze-heal.png"
+  },
+  {
+    "name": "Burn Heal",
+    "price": "&#8377;250",
+    "description": "Need some cool for that burn",
+    "picture_url": "http://pokeapi.co/media/sprites/items/burn-heal.png"
+  },
+  {
+    "name": "Full Heal",
+    "price": "&#8377;600",
+    "description": "Cures all status ailments!",
+    "picture_url": "http://pokeapi.co/media/sprites/items/full-heal.png"
+  },
+  {
+    "name": "Repel",
+    "price": "&#8377;350",
+    "description": "Low level pokemon now fear your stench",
+    "picture_url": "http://pokeapi.co/media/sprites/items/repel.png"
+  },
+  {
+    "name": "Max Repel",
+    "price": "&#8377;700",
+    "description": "All pokemon now fear your stench",
+    "picture_url": "http://pokeapi.co/media/sprites/items/max-repel.png"
+  },
+  {
+    "name": "Great Ball",
+    "price": "&#8377;600",
+    "description": "A great catcher of pokemon",
+    "picture_url": "http://pokeapi.co/media/sprites/items/great-ball.png"
+  },
+  {
+    "name": "Potion",
+    "price": "&#8377;300",
+    "description": "Restores 20 hp!!",
+    "picture_url": "http://pokeapi.co/media/sprites/items/potion.png"
+  },
+  {
+    "name": "Hyper Potion",
+    "price": "&#8377;1200",
+    "description": "Restores 200 hp!!",
+    "picture_url": "http://pokeapi.co/media/sprites/items/hyper-potion.png"
+  },
+  {
+    "name": "Full Restore",
+    "price": "&#8377;3000",
+    "description": "Restores all health and cures all status effects!!",
+    "picture_url": "http://pokeapi.co/media/sprites/items/full-restore.png"
+  },
+  {
+    "name": "Antidote",
+    "price": "&#8377;100",
+    "description": "Cures poison",
+    "picture_url": "http://pokeapi.co/media/sprites/items/antidote.png"
+  },
+  {
+    "name": "Awakening",
+    "price": "&#8377;250",
+    "description": "Cures sleep",
+    "picture_url": "http://pokeapi.co/media/sprites/items/awakening.png"
+  },
+  {
+    "name": "Ice Heal",
+    "price": "&#8377;250",
+    "description": "Cures freezing",
+    "picture_url": "http://pokeapi.co/media/sprites/items/ice-heal.png"
+  },
+  {
+    "name": "Escape Rope",
+    "price": "&#8377;550",
+    "description": "RUN AWAY!!",
+    "picture_url": "http://pokeapi.co/media/sprites/items/escape-rope.png"
+  },
+  {
+    "name": "Super Repel",
+    "price": "&#8377;500",
+    "description": "Wild pokemon flee enmasse from your overpowering odor",
+    "picture_url": "http://pokeapi.co/media/sprites/items/super-repel.png"
+  }
+]
