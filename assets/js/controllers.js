@@ -1,6 +1,7 @@
-pokeApp.controller("ItemsController", ['$scope', function($scope) {
+pokeApp.controller("ItemsController", ['$http', '$scope', function($http, $scope) {
   $scope.greeting = 'Hola!  Yo soy Items Controller';
-}]);
+  $http.get('http://localhost:3000/items').success(function(data){$scope.items = data[0].picture_url});//close get
+}]);//close controller
 
 pokeApp.controller('DetailsController', ['$scope', function($scope){
   $scope.message = "This is the Details Controller"
