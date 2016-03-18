@@ -1,6 +1,11 @@
 pokeApp.controller("ItemsController", ['$http', '$scope', function($http, $scope) {
   $scope.greeting = 'Hola!  Yo soy Items Controller';
-  $http.get('http://localhost:3000/items').success(function(data){$scope.items = data[0].picture_url});//close get
+
+  $http.get('http://localhost:3000/items').success(function(data){
+    // for (var i=0; i<data.length; i++){
+    console.log(data);
+    $scope.items = data
+    });//close get
 }]);//close controller
 
 pokeApp.controller('DetailsController', ['$scope', function($scope){

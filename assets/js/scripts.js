@@ -17,16 +17,16 @@ $(function() {
 //   contentType: 'application/json',
 //   dataType: 'json'
 // });
-
+//
 // $.ajax({
 //
-//         url: 'http://localhost:3000/items/072aa752-5f21-49fd-9ee8-63e5d1806697',
+//         url: 'http://localhost:3000/items/af667877-4dab-481b-9fdf-08ae4cab3e99',
 //         data: { "name": "neel" },
 //         traditional: true,
 //         success: function(data){alert('yo')},
 //         type: 'DELETE'
 //
 //         });
-
-
+//
+//
 });

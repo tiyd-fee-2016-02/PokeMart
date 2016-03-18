@@ -6,10 +6,13 @@
     <h1 class="title">Pokémart</h1>
     <h3 class="sub-title">Save money. Train better.</h3>
   </header>
-<img src="{{items}}" alt='sprite'></img>
+
   <div class="items-list-holder">
+    <!-- <img src="{{items}}" alt='sprite'></img> -->
     <ul class="items-list-holder">
-      <li class="items-list-item" ng-repeat="item in items"><!--Might have to change repeat-->
+      <li class="items-list-item" ng-repeat="item in items track by $index">
+        <img src="{{items.picture_url}}" alt='sprite'></img>
+
       </li>
     </ul>
   </div>
