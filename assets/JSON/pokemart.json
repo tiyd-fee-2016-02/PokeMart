@@ -44,7 +44,7 @@
     },
     {
       "name": "Full Heal",
-      "price": "&#8377;600",
+      "price": "₹600",
       "description": "Cures all status ailments!",
       "picture_url": "http://pokeapi.co/media/sprites/items/full-heal.png"
     },
