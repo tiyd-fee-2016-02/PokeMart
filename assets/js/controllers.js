@@ -3,8 +3,12 @@ pokeApp.controller("ItemsController", ['$http', '$scope', function($http, $scope
 
   $http.get('http://localhost:3000/items').success(function(data){
     // for (var i=0; i<data.length; i++){
-    console.log(data);
-    $scope.items = data
+    // console.log(data);
+    for (var i=0; i<data.length; i++){
+    console.log(data[i].picture_url);
+    $scope.items = data[i].picture_url
+  }
+
     });//close get
 }]);//close controller
 

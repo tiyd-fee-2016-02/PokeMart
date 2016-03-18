@@ -1,4 +1,4 @@
-<div ng-controller="ItemsController">
+<!-- <div ng-controller="ItemsController"> -->
 <div class="items-wrapper">
   <header class="header">
     <img src="assets/img/pokemart-logo.gif">
@@ -9,9 +9,9 @@
 
   <div class="items-list-holder">
     <!-- <img src="{{items}}" alt='sprite'></img> -->
+    {{items}}
     <ul class="items-list-holder">
       <li class="items-list-item" ng-repeat="item in items track by $index">
-        <img src="{{items.picture_url}}" alt='sprite'></img>
 
       </li>
     </ul>
@@ -22,4 +22,4 @@
     </ul>
   </div>
 </div>
-</div>
+<!-- </div> -->
