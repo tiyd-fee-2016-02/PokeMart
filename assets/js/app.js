@@ -10,7 +10,7 @@ var pokeApp = angular.module("pokeApp", ['ngRoute']);
     $routeProvider
         .when('/', {
             templateUrl : 'pages/items.html',
-            // controller  : 'mainController'
+            // controller  : 'ItemsController'
         })
         .when('/create', {
             templateUrl : 'pages/create.html',
