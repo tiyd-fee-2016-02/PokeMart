@@ -13,25 +13,38 @@ var pokeApp = angular.module("pokeApp", ['ngRoute']);
             // controller  : 'ItemsController'
         })
         .when('/create', {
-            templateUrl : 'create.html',
-            // controller  : 'CreateController'
+            templateUrl : 'pages/create.html',
+            // controller  : 'newController'
         })
         .when('/edit', {
-            templateUrl : 'edit.html',
-            // controller  : 'EditController'
+            templateUrl : 'pages/edit.html',
+            // controller  : 'editController'
         })
         .when('/details', {
-            templateUrl : 'details.html',
-            // controller  : 'DetailsController'
-        })
-        .when('/cart', {
-            templateUrl : 'cart.html',
-            // controller  : 'CartController'
+            templateUrl : 'pages/details.html',
+            // controller  : 'detailsController'
         })
         .otherwise({
       redirectTo: '/'
     });
 
+    pokeApp.factory('mainInfoFactory', function($http) {
+
+        var mainInfo = $http.get('/assets/json/pokemart.json').success(function(response) {
+            console.log(response.data);
+        });
+
+        var factory = {}; // define factory object
+
+        factory.getMainInfo = function() { // define method on factory object
+
+            return mainInfo; // returning data that was pulled in $http call
+
+        };
+
+        return factory; // returning factory to make it ready to be pulled by the controller
+
+    });
 });
 // };
 // });
