@@ -1,0 +1,83 @@
+body {
+  background: #eee; }
+
+header {
+  background: #ddd; }
+  header img {
+    display: inline-block;
+    width: 150px; }
+
+.title-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 213px;
+  margin-top: 2.7em;
+  margin-left: 22em; }
+
+.title {
+  font-size: 2em;
+  font-weight: bold; }
+
+.sub-title {
+  font-size: 1.3em; }
+
+.login-box {
+  background: #aaa;
+  width: 50%;
+  margin: 10em auto;
+  padding: 2em;
+  text-align: center;
+  font-size: 1em; }
+
+.login-button-holder {
+  width: 60%;
+  margin: 3em auto;
+  margin-bottom: 5em; }
+
+.btn {
+  display: inline-block;
+  width: 100px;
+  background-image: linear-gradient(to bottom, #ddd, #aaa); }
+
+.login-admin {
+  float: left; }
+
+.login-customer {
+  float: right; }
+
+.items-list-view {
+  vertical-align: top;
+  width: 225px;
+  display: inline-block;
+  background: #ccc; }
+
+.items-list-item {
+  border: 1px solid #bbb;
+  padding: .5em 0; }
+
+.items-list-item-name,
+.items-list-item-price,
+.items-list-item-image {
+  display: inline-block;
+  font-size: 1.2em; }
+
+.items-list-item-image {
+  float: right;
+  width: 35px;
+  margin-top: -8px; }
+
+.items-card-view {
+  vertical-align: top;
+  width: 69%;
+  display: inline-block; }
+
+.items-card-item {
+  width: 35%;
+  height: 200px;
+  display: inline-block;
+  border: 1px solid blue;
+  margin: 2em 7%;
+  border-radius: 5px; }
+
+/*# sourceMappingURL=styles.css.map */
