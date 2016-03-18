@@ -8,7 +8,7 @@ var pokeApp = angular.module("pokeApp", ['ngRoute']);
 
  pokeApp.config(function($routeProvider) {
     $routeProvider
-        .when('/', {
+        .when('/items', {
             templateUrl : 'pages/items.html',
             controller  : 'ItemsController'
         })
@@ -22,6 +22,14 @@ var pokeApp = angular.module("pokeApp", ['ngRoute']);
         })
         .when('/details', {
             templateUrl : 'pages/details.html',
+            // controller  : 'detailsController'
+        })
+        .when('/cart', {
+            templateUrl : 'pages/cart.html',
+            // controller  : 'detailsController'
+        })
+        .when('/', {
+            templateUrl : 'pages/login.html',
             // controller  : 'detailsController'
         })
         .otherwise({

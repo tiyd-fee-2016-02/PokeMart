@@ -5,13 +5,18 @@
     <h3 class="sub-title">Save money. Train better.</h3>
   </header>
 
-  <div class="details-view">
-    <ul class="details-preview-holder">
-    </ul>
+  <div class="details-preview">
+      <div class="details-name">{{items[???????].name}}</div>
+      <div class="details-price">{{items[???????].price}}</div>
+      <div class="details-description">{{items[???????].description}}</div>
+      <img class="details-image" src="{{items[???????].picture_url}}">
   </div>
 
   <div class="details-expanded-review">
     <ul class="details-review-holder">
+      <li class="details-review" ng-repeat="review in reviews track by $index">
+        <div class="review">{{reviews[???????].review}}</div>
+      </li>
     </ul>
   </div>
 </div>
