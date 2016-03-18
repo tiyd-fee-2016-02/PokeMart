@@ -1,6 +1,10 @@
 body {
   background: #eee; }
 
+a {
+  text-decoration: none;
+  color: #000; }
+
 header {
   background: #ddd; }
   header img {
@@ -69,15 +73,48 @@ header {
 
 .items-card-view {
   vertical-align: top;
-  width: 69%;
+  width: 80%;
   display: inline-block; }
 
 .items-card-item {
+  vertical-align: top;
   width: 35%;
+  background: #ccc;
   height: 200px;
   display: inline-block;
-  border: 1px solid blue;
-  margin: 2em 7%;
-  border-radius: 5px; }
+  margin: 4em 0 0 9%;
+  border-radius: 5px;
+  padding: 2em 2em 0 2em; }
+
+.items-card-item-name {
+  font-size: 1.5em;
+  display: inline-block; }
+
+.items-card-item-price {
+  float: right;
+  font-size: 1.5em; }
+
+.items-card-item-image {
+  display: block;
+  margin: 1em auto 1em auto;
+  width: 50px; }
+
+.items-card-item-description {
+  text-align: center;
+  text-transform: capitalize; }
+
+.card-button-holder {
+  margin: 2em auto 0 auto;
+  width: 90%; }
+  .card-button-holder div {
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+    padding: 5px;
+    border: 1px solid #bbb;
+    background-image: linear-gradient(to bottom, #fff, #ccc); }
+
+.card-add-to-cart-button {
+  float: right; }
 
 /*# sourceMappingURL=styles.css.map */
