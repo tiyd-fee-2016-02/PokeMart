@@ -10,19 +10,23 @@ var pokeApp = angular.module("pokeApp", ['ngRoute']);
     $routeProvider
         .when('/', {
             templateUrl : 'pages/items.html',
-            // controller  : 'mainController'
+            // controller  : 'ItemsController'
         })
         .when('/create', {
             templateUrl : 'create.html',
-            // controller  : 'newController'
+            // controller  : 'CreateController'
         })
         .when('/edit', {
             templateUrl : 'edit.html',
-            // controller  : 'editController'
+            // controller  : 'EditController'
         })
         .when('/details', {
             templateUrl : 'details.html',
-            // controller  : 'detailsController'
+            // controller  : 'DetailsController'
+        })
+        .when('/cart', {
+            templateUrl : 'cart.html',
+            // controller  : 'CartController'
         })
         .otherwise({
       redirectTo: '/'

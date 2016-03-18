@@ -3,9 +3,17 @@ pokeApp.controller('ItemsController', function($scope){
 });
 
 pokeApp.controller('DetailsController', function($scope){
-  $scope.message = "This is the Items Controller"
+  $scope.message = "This is the Details Controller"
 });
 
 pokeApp.controller('CartController', function($scope){
-  $scope.message = "This is the Items Controller"
+  $scope.message = "This is the Cart Controller"
+});
+
+pokeApp.controller('CreateController', function($scope){
+  $scope.message = "This is the Create Controller"
+});
+
+pokeApp.controller('EditController', function($scope){
+  $scope.message = "This is the Edit Controller"
 });
