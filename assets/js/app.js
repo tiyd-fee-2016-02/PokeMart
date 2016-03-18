@@ -1,4 +1,4 @@
-// ;(function(){
+
 // var xhr = new XMLHttpRequest();
 // xhr.onreadystatechange = function(){
 
@@ -10,7 +10,7 @@ var pokeApp = angular.module("pokeApp", ['ngRoute']);
     $routeProvider
         .when('/', {
             templateUrl : 'pages/items.html',
-            // controller  : 'ItemsController'
+            controller  : 'ItemsController'
         })
         .when('/create', {
             templateUrl : 'pages/create.html',
@@ -28,23 +28,24 @@ var pokeApp = angular.module("pokeApp", ['ngRoute']);
       redirectTo: '/'
     });
 
-    pokeApp.factory('mainInfoFactory', function($http) {
 
-        var mainInfo = $http.get('/assets/json/pokemart.json').success(function(response) {
-            console.log(response.data);
-        });
 
-        var factory = {}; // define factory object
-
-        factory.getMainInfo = function() { // define method on factory object
-
-            return mainInfo; // returning data that was pulled in $http call
-
-        };
-
-        return factory; // returning factory to make it ready to be pulled by the controller
-
-    });
+    // pokeApp.factory('mainInfoFactory', function($http) {
+    //
+    //     var mainInfo = $http.get('/assets/json/pokemart.json').success(function(response) {
+    //         console.log(response.data);
+    //     });
+    //
+    //     var factory = {}; // define factory object
+    //
+    //     factory.getMainInfo = function() { // define method on factory object
+    //
+    //         return mainInfo; // returning data that was pulled in $http call
+    //
+    //     };
+    //
+    //     return factory; // returning factory to make it ready to be pulled by the controller
+    //
+    // });
 });
 // };
-// });

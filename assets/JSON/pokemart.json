@@ -113,11 +113,6 @@
       "price": "&#8377;500",
       "description": "Wild pokemon flee enmasse from your overpowering odor",
       "picture_url": "http://pokeapi.co/media/sprites/items/super-repel.png"
-    },
-    {
-      "name": "fluffy",
-      "description": "thunderperson",
-      "id": "072aa752-5f21-49fd-9ee8-63e5d1806697"
     }
   ]
 }

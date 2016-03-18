@@ -2,11 +2,11 @@ $(function() {
 'use strict'
 
 
-
-$.getJSON("http://localhost:3000/items", function(data) {
-  console.log(data);
-  // data[0].name = "Fluffy Bear"
-});
+//
+// $.getJSON("http://localhost:3000/items", function(data) {
+//   console.log(data);
+//   // data[0].name = "Fluffy Bear"
+// });
 
 
 // $.ajax({
@@ -18,15 +18,15 @@ $.getJSON("http://localhost:3000/items", function(data) {
 //   dataType: 'json'
 // });
 
-$.ajax({
-
-        url: 'http://localhost:3000/items/a27511cc-2d00-4dad-8a0e-c9de336d9144',
-        data: { "name": "neel" },
-        traditional: true,
-        success: function(data){alert('yo')},
-        type: 'DELETE'
-
-        });
+// $.ajax({
+//
+//         url: 'http://localhost:3000/items/072aa752-5f21-49fd-9ee8-63e5d1806697',
+//         data: { "name": "neel" },
+//         traditional: true,
+//         success: function(data){alert('yo')},
+//         type: 'DELETE'
+//
+//         });
 
 
 });
