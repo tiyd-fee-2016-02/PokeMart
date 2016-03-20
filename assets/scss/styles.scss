@@ -185,7 +185,8 @@ header{
   display: inline-block;
   // top: 0;
   // position: fixed;
-  // overflow: scroll;
+  overflow: scroll;
+  height: 710px;
   // float: right;
   // border: 1px solid blue;
 }
@@ -197,9 +198,9 @@ header{
   height: 200px;
   display: inline-block;
   // border: 1px solid blue;
-  margin: 4em 0 0 9%;
+  // margin: 0 0 0 9%;
   border-radius: 5px;
-  padding: 2em 2em 0 2em;
+  // padding: 2em 2em 0 2em;
 }
 
 .items-card-item-name{
@@ -239,4 +240,15 @@ header{
 
 .card-add-to-cart-button{
   float: right;
+}
+
+.cart-information-wrapper{
+  // height: 40%;
+  // width: 40%;
+  color: white;
+  background-color: blue;
+  float: right;
+  vertical-align: top;
+  border: solid 2px black;
+
 }
