@@ -1,14 +1,9 @@
-pokeApp.controller("ItemsController", ['$http', '$scope', function($http, $scope) {
+pokeApp.controller("ItemsController", ['$scope', 'storeItems', function($scope, storeItems) {
   $scope.greeting = 'Hola!  Yo soy Items Controller';
 
-  $http.get('http://localhost:3000/items').success(function(data){
-
-    // for (var i=0; i<data.length; i++){
-    // console.log(data[i].name)};
-    $scope.items = data
-
-
-    });//close get
+  storeItems.success(function(data) {
+      $scope.items = data;
+  });
 }]);//close controller
 
 pokeApp.controller('DetailsController', ['$scope', function($scope){

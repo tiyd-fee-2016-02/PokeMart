@@ -35,25 +35,10 @@ var pokeApp = angular.module("pokeApp", ['ngRoute']);
         .otherwise({
       redirectTo: '/'
     });
-
-
-
-    // pokeApp.factory('mainInfoFactory', function($http) {
-    //
-    //     var mainInfo = $http.get('/assets/json/pokemart.json').success(function(response) {
-    //         console.log(response.data);
-    //     });
-    //
-    //     var factory = {}; // define factory object
-    //
-    //     factory.getMainInfo = function() { // define method on factory object
-    //
-    //         return mainInfo; // returning data that was pulled in $http call
-    //
-    //     };
-    //
-    //     return factory; // returning factory to make it ready to be pulled by the controller
-    //
-    // });
 });
-// };
+
+
+    pokeApp.factory('storeItems', function ($q, $http) {
+
+      return $http.get('http://localhost:3000/items');
+    });
