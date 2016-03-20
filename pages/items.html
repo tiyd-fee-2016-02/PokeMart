@@ -29,11 +29,23 @@
         <img class="items-card-item-image" src="{{item.picture_url}}">
         <div class="items-card-item-description">{{item.description}}</div>
         <div class="card-button-holder">
-          <a href="#/items"><div class="card-details-button">Details</div></a><!--Add details as a modal??-->
+          <a href="#/items"><div ng-click='detailValues(item)' class="card-details-button">Details</div></a><!--Add details as a modal??-->
           <a href="#/items"><div ng-click='cartValues(item)' class="card-add-to-cart-button">Add To Cart</div></a>
         </div>
       </li>
     </ul>
+  </div>
+
+  <div class="modal" ng-class="dynamicClass">
+    <div class="modal-details-container">
+      <div class="details-name" ng-bind="myTextName"></div>
+      <div class="details-price" ng-bind="myTextPrice"></div>
+      <div class="details-description" ng-bind="myTextDescription"></div>
+      <br>
+      Reviews:
+      <div class="details-reviews" ng-bind="myTextReviews"></div>
+      <div class="modal-close-button" ng-click="returnToStore()">Return To Store</div>
+    </div>
   </div>
 
 </div>

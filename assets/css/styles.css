@@ -58,6 +58,50 @@ header {
   .items-search-bar input {
     font-size: 1em; }
 
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(50, 50, 50, 0.8);
+  display: none; }
+
+.modal-details-container {
+  width: 35%;
+  margin: auto;
+  margin-top: 19em;
+  padding: 3em 3em 1em 3em;
+  background: rgba(200, 200, 200, 0.9); }
+
+.showing {
+  display: block; }
+
+.modal-close-button {
+  text-align: center;
+  display: inline-block;
+  width: 150px;
+  padding: 5px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  margin: 2em 0 1em 0;
+  background-image: linear-gradient(to bottom, #fff, #ccc); }
+
+.details-name,
+.details-price {
+  display: inline-block;
+  font-size: 1.25em; }
+
+.details-price {
+  margin-left: 1em; }
+
+.details-description {
+  margin-top: 1em;
+  font-size: 1em; }
+
+.details-reviews {
+  margin-top: 1em; }
+
 .items-list-view {
   vertical-align: top;
   width: 225px;

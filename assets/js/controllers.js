@@ -9,7 +9,21 @@ pokeApp.controller("ItemsController", ['$scope', 'storeItems', '$http', function
 
   $scope.cartValues = function(item){
     console.log(item);
+
     return $http.post('http://localhost:3000/cart', item);
+  };
+
+  $scope.detailValues = function(item){
+    console.log(item);
+    $scope.dynamicClass = 'showing';
+    $scope.myTextName = item.name + ":";
+    $scope.myTextPrice = item.price;
+    $scope.myTextDescription = "Description: " +item.description;
+    $scope.myTextReviews = item.reviews;
+  };
+
+  $scope.returnToStore = function(){
+    $scope.dynamicClass = '';
   };
 
 
