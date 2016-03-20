@@ -3,9 +3,13 @@ pokeApp.controller("ItemsController", ['$scope', 'storeItems', function($scope, 
   storeItems.success(function(data) {
       $scope.items = data;
   });
-  $(".items-card-holder").on('click', '.card-add-to-cart-button', function(){
-    console.log($(this).parents());
-  });
+  // $(".items-card-holder").on('click', '.card-add-to-cart-button', function(){
+  //   console.log($this);
+  // });
+
+  $scope.cartValues = function(){
+    console.log($scope);
+  };
 }]);//close controller
 
 pokeApp.controller('DetailsController', ['$scope', function($scope){
