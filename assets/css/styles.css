@@ -50,6 +50,14 @@ header {
 .login-customer {
   float: right; }
 
+.items-search-bar {
+  position: absolute;
+  top: 30px;
+  right: 70px;
+  font-size: 1.25em; }
+  .items-search-bar input {
+    font-size: 1em; }
+
 .items-list-view {
   vertical-align: top;
   width: 225px;

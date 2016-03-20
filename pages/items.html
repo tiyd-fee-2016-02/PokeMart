@@ -6,6 +6,7 @@
       <h1 class="title">Pokémart</h1>
       <h3 class="sub-title">Save money. Train better.</h3>
     </div>
+    <label class="items-search-bar">Search: <input ng-model="search"></label>
   </header>
 
   <div class="items-list-view">
@@ -22,14 +23,14 @@
 
   <div class="items-card-view">
     <ul class="items-card-holder">
-      <li class="items-card-item" ng-repeat="item in items track by $index" id="{{$index}}">
+      <li class="items-card-item" ng-repeat="item in items" id="{{$index}}">
         <div class="items-card-item-name">{{items[$index].name}}</div>
         <div class="items-card-item-price">{{items[$index].price}}</div>
         <img class="items-card-item-image" src="{{items[$index].picture_url}}">
         <div class="items-card-item-description">{{items[$index].description}}</div>
         <div class="card-button-holder">
           <a href="#/items"><div class="card-details-button">Details</div></a><!--Add details as a modal??-->
-          <a href="#/cart"><div class="card-add-to-cart-button">Add To Cart</div></a>
+          <a href="#/items"><div class="card-add-to-cart-button">Add To Cart</div></a>
         </div>
       </li>
     </ul>
