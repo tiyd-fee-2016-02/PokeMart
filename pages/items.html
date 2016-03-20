@@ -23,7 +23,7 @@
 
   <div class="items-card-view">
     <ul class="items-card-holder">
-      <li class="items-card-item" ng-repeat="item in items" id="{{$index}}">
+      <li class="items-card-item" ng-repeat="item in items | filter:search" id="{{$index}}">
         <div class="items-card-item-name">{{items[$index].name}}</div>
         <div class="items-card-item-price">{{items[$index].price}}</div>
         <img class="items-card-item-image" src="{{items[$index].picture_url}}">

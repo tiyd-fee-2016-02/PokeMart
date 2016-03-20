@@ -1,8 +1,10 @@
 pokeApp.controller("ItemsController", ['$scope', 'storeItems', function($scope, storeItems) {
   $scope.greeting = 'Hola!  Yo soy Items Controller';
-
   storeItems.success(function(data) {
       $scope.items = data;
+  });
+  $(".items-card-holder").on('click', '.card-add-to-cart-button', function(){
+    console.log($(this).parents());
   });
 }]);//close controller
 
