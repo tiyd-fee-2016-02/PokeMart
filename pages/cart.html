@@ -6,11 +6,23 @@
   </header>
 
   <div class="cart">
-
-    <div class="cart-title">Shopping Cart</div>
     <div class="cart-content-holder">
       <ul class="cart-content">
+        <div class="cart-list-view">
+          <!-- <img src="{{items}}" alt='sprite'></img> -->
+          <!-- {{items}} -->
+          <ul class="items-list-holder">
+            <li class="items-list-item" ng-repeat="item in items track by $index">
+              <div class="items-list-item-name">{{items[$index].name}}:</div>
+              <div class="items-list-item-price">{{items[$index].price}}</div>
+              <img class="items-list-item-image" src="{{items[$index].picture_url}}">
+              <div class='cart-delete-btn' ng-click='cartDelete(item)'>Delete</div>
+            </li>
+          </ul>
+        </div>
       </ul>
     </div>
+
   </div>
+  <div>Total cost: {{cartTotal() | currency:"₹"}}</div>
 </div>

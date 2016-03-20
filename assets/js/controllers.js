@@ -1,4 +1,4 @@
-pokeApp.controller("ItemsController", ['$scope', 'storeItems', function($scope, storeItems) {
+pokeApp.controller("ItemsController", ['$scope', 'storeItems', '$http', function($scope, storeItems, $http) {
   $scope.greeting = 'Hola!  Yo soy Items Controller';
   storeItems.success(function(data) {
       $scope.items = data;
@@ -7,17 +7,47 @@ pokeApp.controller("ItemsController", ['$scope', 'storeItems', function($scope, 
   //   console.log($this);
   // });
 
-  $scope.cartValues = function(){
-    console.log($scope);
+  $scope.cartValues = function(item){
+    console.log(item);
+    return $http.post('http://localhost:3000/cart', item);
   };
+
+
 }]);//close controller
 
 pokeApp.controller('DetailsController', ['$scope', function($scope){
   $scope.message = "This is the Details Controller"
 }]);
 
-pokeApp.controller('CartController', ['$scope', function($scope){
-  $scope.message = "This is the Cart Controller"
+pokeApp.controller('CartController', ['$scope', '$http', function($scope, $http){
+
+  $http.get("http://localhost:3000/cart").success(function(data){
+      $scope.items = data;
+  })
+
+  $scope.cartTotal = function(){
+    var total = 0;
+    // console.log($scope.items.length);
+    for (var i = 0; i < $scope.items.length; i++){
+      var price = $scope.items[i].price.substring(1, $scope.items[i].price.length);
+      priceInt = parseInt(price);
+      total += priceInt;
+    }
+    return total;
+    console.log(total)
+    };
+
+  $scope.cartDelete = function(item){
+    console.log(item.id)
+    $.ajax({
+            url: 'http://localhost:3000/cart/'+item.id,
+            traditional: true,
+            success: function(data){},
+            type: 'DELETE'
+            });
+    $(this).remove();
+  }
+
 }]);
 
 pokeApp.controller('CreateController', ['$scope', function($scope){

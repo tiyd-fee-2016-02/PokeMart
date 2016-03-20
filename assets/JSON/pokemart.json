@@ -210,5 +210,39 @@
       ]
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": 1,
+      "name": "Ultra Ball",
+      "price": "₹1200",
+      "description": "catch more wild pokemon",
+      "picture_url": "http://pokeapi.co/media/sprites/items/ultra-ball.png",
+      "reviews": [
+        "IT REALLY DOES CATCH 'EM ALL EVEN BETTER",
+        "I USE IT EVERY DAY!!!  SO MANY WILD POKEMON!!! ALL MINE!!!  FOREVER1111"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Super Potion",
+      "price": "₹700",
+      "description": "heal your wounded pokefriends",
+      "picture_url": "http://pokeapi.co/media/sprites/items/super-potion.png",
+      "reviews": [
+        "MY POKÉFRIENDS ARE SO DANG HEALED",
+        "I LOVE THIS THING SO MUCH"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Revive",
+      "price": "₹1500",
+      "description": "Revive your pokemon and bring back to half health",
+      "picture_url": "http://pokeapi.co/media/sprites/items/revive.png",
+      "reviews": [
+        "YOU POKÉMON REALLY DO GO FROM ASLEEP TO AWAKE...IT'S AMAZING!!!!",
+        "NOT ONLY DO THEY WAKE UP...THEY GET HALF THEIR HEALTH BACK!!!   WHAT A DEAL!!!!!!"
+      ]
+    }
+  ]
 }
