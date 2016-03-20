@@ -1,6 +1,7 @@
 {
   "items": [
     {
+      "id": 0,
       "name": "Pokéball",
       "price": "₹200",
       "description": "catch em all",
@@ -11,6 +12,7 @@
       ]
     },
     {
+      "id": 1,
       "name": "Ultra Ball",
       "price": "₹1200",
       "description": "catch more wild pokemon",
@@ -21,6 +23,7 @@
       ]
     },
     {
+      "id": 2,
       "name": "Super Potion",
       "price": "₹700",
       "description": "heal your wounded pokefriends",
@@ -31,6 +34,7 @@
       ]
     },
     {
+      "id": 3,
       "name": "Max Potion",
       "price": "₹2500",
       "description": "heal your wounded pokefriends to the max!!",
@@ -41,6 +45,7 @@
       ]
     },
     {
+      "id": 4,
       "name": "Revive",
       "price": "₹1500",
       "description": "Revive your pokemon and bring back to half health",
@@ -51,6 +56,7 @@
       ]
     },
     {
+      "id": 5,
       "name": "Parlyz Heal",
       "price": "₹200",
       "description": "Give your paralyzed friend some mobility!",
@@ -61,6 +67,7 @@
       ]
     },
     {
+      "id": 6,
       "name": "Burn Heal",
       "price": "₹250",
       "description": "Need some cool for that burn",
@@ -71,6 +78,7 @@
       ]
     },
     {
+      "id": 7,
       "name": "Full Heal",
       "price": "₹600",
       "description": "Cures all status ailments!",
@@ -81,6 +89,7 @@
       ]
     },
     {
+      "id": 8,
       "name": "Repel",
       "price": "₹350",
       "description": "Low level pokemon now fear your stench",
@@ -91,6 +100,7 @@
       ]
     },
     {
+      "id": 9,
       "name": "Max Repel",
       "price": "₹700",
       "description": "All pokemon now fear your stench",
@@ -101,6 +111,7 @@
       ]
     },
     {
+      "id": 10,
       "name": "Great Ball",
       "price": "₹600",
       "description": "A great catcher of pokemon",
@@ -111,6 +122,7 @@
       ]
     },
     {
+      "id": 11,
       "name": "Potion",
       "price": "₹300",
       "description": "Restores 20 hp!!",
@@ -121,6 +133,7 @@
       ]
     },
     {
+      "id": 12,
       "name": "Hyper Potion",
       "price": "₹1200",
       "description": "Restores 200 hp!!",
@@ -131,6 +144,7 @@
       ]
     },
     {
+      "id": 13,
       "name": "Full Restore",
       "price": "₹3000",
       "description": "Restores all health and cures all status effects!!",
@@ -141,6 +155,7 @@
       ]
     },
     {
+      "id": 14,
       "name": "Antidote",
       "price": "₹100",
       "description": "Cures poison",
@@ -151,15 +166,18 @@
       ]
     },
     {
+      "id": 15,
       "name": "Awakening",
       "price": "₹250",
       "description": "Cures sleep",
       "picture_url": "http://pokeapi.co/media/sprites/items/awakening.png",
       "reviews": [
         "NEED A POKÉ PICK-ME-UP?  AWAKENING IS JUST THE THING!!!!!",
-        "I GIVE MY PIKACHU AWAKENING EVERY MORNING, IT SURE DOES WAKE THUNDERGOD UP!!!!"]
+        "I GIVE MY PIKACHU AWAKENING EVERY MORNING, IT SURE DOES WAKE THUNDERGOD UP!!!!"
+      ]
     },
     {
+      "id": 16,
       "name": "Ice Heal",
       "price": "₹250",
       "description": "Cures freezing",
@@ -170,6 +188,7 @@
       ]
     },
     {
+      "id": 17,
       "name": "Escape Rope",
       "price": "₹550",
       "description": "RUN AWAY!!",
@@ -180,6 +199,7 @@
       ]
     },
     {
+      "id": 18,
       "name": "Super Repel",
       "price": "₹500",
       "description": "Wild pokemon flee enmasse from your overpowering odor",
