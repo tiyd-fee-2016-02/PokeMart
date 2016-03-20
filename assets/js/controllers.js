@@ -13,7 +13,7 @@ pokeApp.controller("ItemsController", ['$scope', 'storeItems', '$http', function
 
   $scope.cartValues = function(item){
     console.log(item);
-    item.id = 0;
+    item.id=0;
     return $http.post('http://localhost:3000/cart', item);
   };
 
