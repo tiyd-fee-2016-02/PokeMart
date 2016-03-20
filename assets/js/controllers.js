@@ -3,6 +3,10 @@ pokeApp.controller("ItemsController", ['$scope', 'storeItems', '$http', function
   storeItems.success(function(data) {
       $scope.items = data;
   });
+  function doWhatMyHeartTellsMe(){
+    var position = $(".items-card-view").prop('scrollHeight');
+    $(".items-card-view").scrollTop(position);
+  }
   // $(".items-card-holder").on('click', '.card-add-to-cart-button', function(){
   //   console.log($this);
   // });
