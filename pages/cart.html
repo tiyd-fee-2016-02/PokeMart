@@ -3,6 +3,8 @@
     <img src="assets/img/pokemart-logo.gif">
     <h1 class="title">Pokémart</h1>
     <h3 class="sub-title">Save money. Train better.</h3>
+    <div>Total cost: {{cartTotal() | currency:"₹"}}</div>
+    <a href='#/items'>TO THE ITEMS</a>
   </header>
 
   <div class="cart">
@@ -24,5 +26,5 @@
     </div>
 
   </div>
-  <div>Total cost: {{cartTotal() | currency:"₹"}}</div>
+
 </div>
