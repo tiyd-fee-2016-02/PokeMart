@@ -52,7 +52,7 @@ header {
 
 .items-search-bar {
   position: absolute;
-  top: 30px;
+  top: 15px;
   right: 70px;
   font-size: 1.25em; }
   .items-search-bar input {
@@ -101,6 +101,18 @@ header {
 
 .details-reviews {
   margin-top: 1em; }
+
+.shop-btn-link {
+  position: absolute;
+  top: 60px;
+  right: 70px; }
+  .shop-btn-link div {
+    text-align: center;
+    width: 150px;
+    padding: 5px 0;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, #aaa, #bbb); }
 
 .items-list-view {
   vertical-align: top;
