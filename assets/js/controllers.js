@@ -1,9 +1,28 @@
 pokeApp.controller("ItemsController", ['$scope', 'storeItems', function($scope, storeItems) {
   $scope.greeting = 'Hola!  Yo soy Items Controller';
-
   storeItems.success(function(data) {
       $scope.items = data;
   });
+  // $(".items-card-holder").on('click', '.card-add-to-cart-button', function(){
+  //   console.log($this);
+  // });
+
+  $scope.cartValues = function(item){
+    console.log(item);
+  };
+
+  $scope.detailValues = function(item){
+    console.log(item);
+    $scope.dynamicClass = 'showing';
+    $scope.myTextName = item.name + ":";
+    $scope.myTextPrice = item.price;
+    $scope.myTextDescription = "Description: " +item.description;
+    $scope.myTextReviews = item.reviews;
+  };
+
+  $scope.returnToStore = function(){
+    $scope.dynamicClass = '';
+  };
 }]);//close controller
 
 pokeApp.controller('DetailsController', ['$scope', function($scope){
