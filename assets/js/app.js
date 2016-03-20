@@ -14,23 +14,23 @@ var pokeApp = angular.module("pokeApp", ['ngRoute']);
         })
         .when('/create', {
             templateUrl : 'pages/create.html',
-            // controller  : 'newController'
+            controller  : 'NewController'
         })
         .when('/edit', {
             templateUrl : 'pages/edit.html',
-            // controller  : 'editController'
+            controller  : 'EditController'
         })
         .when('/details', {
             templateUrl : 'pages/details.html',
-            // controller  : 'detailsController'
+            controller  : 'DetailsController'
         })
         .when('/cart', {
             templateUrl : 'pages/cart.html',
-            // controller  : 'detailsController'
+            controller  : 'CartController'
         })
         .when('/', {
             templateUrl : 'pages/login.html',
-            // controller  : 'detailsController'
+            // controller  : 'DetailsController'
         })
         .otherwise({
       redirectTo: '/'
