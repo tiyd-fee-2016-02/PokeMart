@@ -211,10 +211,18 @@
     },
     {
       "id": 19,
-      "name": "hey ",
-      "price": "hi",
-      "description": "hello",
-      "picture_url": "a thing",
+      "name": "",
+      "price": "",
+      "description": "",
+      "picture_url": "",
+      "reviews": []
+    },
+    {
+      "id": 20,
+      "name": "",
+      "price": "",
+      "description": "",
+      "picture_url": "",
       "reviews": []
     }
   ],
