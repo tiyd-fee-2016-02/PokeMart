@@ -11,6 +11,7 @@
 
   <div class="edit-box">
     <div class="edit-info-holder">
+      <div class="edit-header">Create Item</div>
       <div class="edit-name">
         Name:  <input class="edit-name-input">
       </div>
@@ -18,13 +19,15 @@
         Price: <input class="edit-price-input">
       </div>
       <div class="edit-description">
-        Description: <textarea class="edit-description-input"></textarea>
+        <div class="description-text">Description: </div><textarea class="edit-description-input"></textarea>
       </div>
       <div class="edit-image">
         <div class="edit-image">Image url: <input class="edit-image-url"></div>
       </div>
-      <div class="edit-save-btn" ng-click="saveItem()">Save</div>
-      <div class="edit-delete-btn" ng-click="deleteItem()">Delete</div>
+      <div class="edit-item-btn-holder">
+        <a href="#/admin"><div class="edit-cancel-btn">Cancel</div></a>
+        <a href="#/admin"><div class="edit-save-btn" ng-click="saveItem()">Create</div></a>        
+      </div>
     </div>
 
   </div>

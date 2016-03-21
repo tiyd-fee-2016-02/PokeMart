@@ -248,7 +248,56 @@ header {
 .edit-info-holder {
   background: #aaa;
   width: 40%;
-  margin: 18em auto 0 auto;
-  padding: 2em; }
+  margin: 4em auto 0 auto;
+  padding: 4em 4em 2em 4em;
+  border-radius: 5px; }
+  .edit-info-holder input {
+    font-size: 1em;
+    width: 60%;
+    margin-left: 1em;
+    margin-top: 2em; }
+  .edit-info-holder textarea {
+    font-size: .8em;
+    width: 60%;
+    max-width: 60%;
+    height: 6em;
+    max-height: 6em;
+    margin-left: 5px; }
+
+.edit-description {
+  margin-top: 2em; }
+
+.description-text {
+  display: inline-block;
+  vertical-align: top; }
+
+.edit-header {
+  font-size: 1.2em;
+  text-align: center;
+  margin: -1em 0 2em 0; }
+
+.edit-name-input {
+  margin-left: 2.4em !important; }
+
+.edit-price-input {
+  margin-left: 2.8em !important; }
+
+.edit-item-btn-holder {
+  width: 80%;
+  margin: 2.5em auto 0 auto; }
+  .edit-item-btn-holder div {
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+    padding: 6px 0;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, #aaa, #bbb); }
+    .edit-item-btn-holder div:hover {
+      background-image: linear-gradient(to bottom, #777, #555);
+      color: white; }
+
+.edit-save-btn {
+  float: right; }
 
 /*# sourceMappingURL=styles.css.map */
