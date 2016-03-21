@@ -208,7 +208,24 @@
         "WHEN I REALLY DON'T WANNA SEE ANY POKÉMON BUT MY OWN, I USE SUPER REPEL.  IT SUPER WORKS!!!",
         "WHERE WOULD I BE WITHOUT MY SUPER REPEL?"
       ]
+    },
+    {
+      "id": 19,
+      "name": "hey ",
+      "price": "hi",
+      "description": "hello",
+      "picture_url": "a thing",
+      "reviews": []
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": 1,
+      "name": "POkemon thing ",
+      "price": 3500,
+      "description": "this is a thing that does stuff for you",
+      "picture_url": "www.img.com/img",
+      "reviews": []
+    }
+  ]
 }

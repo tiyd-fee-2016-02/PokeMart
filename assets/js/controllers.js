@@ -109,10 +109,19 @@ pokeApp.controller('CreateController', ['$scope', function($scope){
 }]);
 
 pokeApp.controller('EditController',['$scope', '$http', function($scope, $http){
+
   $scope.message = "This is the Edit Controller"
   $scope.saveItem = function(){
-    
-  }
+    $http.post('http://localhost:3000/items',
+    {id: 0,
+    name: $('.edit-name-input').val(),
+    price: $('.edit-price-input').val(),
+    description: $('.edit-description-input').val(),
+    picture_url: $('.edit-image-url').val(),
+    reviews: []}).then(function(response){
+      return response;
+    })
+  };
 
 }]);
 
