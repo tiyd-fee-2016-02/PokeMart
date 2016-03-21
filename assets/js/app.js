@@ -41,9 +41,9 @@ var pokeApp = angular.module("pokeApp", ['ngRoute']);
     pokeApp.factory('storeItems', function ($q, $http) {
 
       return $http.get('http://localhost:3000/items');
+    });
 
-      storeItems.addToCart = function (item) {
-        console.log(item)
-        return $http.post('http://localhost:3000/cart', item);
-      }
+    pokeApp.factory('cartItems', function ($q, $http) {
+
+      return $http.get('http://localhost:3000/cart');
     });

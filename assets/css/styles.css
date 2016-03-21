@@ -6,7 +6,7 @@ a {
   color: #000; }
 
 header {
-  background: #ddd; }
+  background: #35538a; }
   header img {
     display: inline-block;
     width: 150px; }
@@ -15,17 +15,24 @@ header {
   display: inline-block;
   vertical-align: top;
   text-align: center;
-  width: 213px;
-  margin-top: 1.5em;
+  width: 500px;
+  margin-top: 1em;
   margin-left: 22em;
   margin-bottom: 2em; }
 
 .title {
   font-size: 2em;
-  font-weight: bold; }
+  font-weight: bold;
+  display: inline-block;
+  color: white;
+  font-family: sans-serif; }
 
 .sub-title {
-  font-size: 1.3em; }
+  font-size: 1.3em;
+  display: inline-block;
+  color: white;
+  margin: 0 0 0 20px;
+  font-family: sans-serif; }
 
 .login-box {
   background: #aaa;
@@ -53,9 +60,11 @@ header {
 
 .items-search-bar {
   position: absolute;
-  top: 15px;
-  right: 70px;
-  font-size: 1.25em; }
+  top: 20px;
+  right: 200px;
+  font-size: 1.25em;
+  color: white;
+  font-family: sans-serif; }
   .items-search-bar input {
     font-size: 1em; }
 
@@ -105,8 +114,9 @@ header {
 
 .shop-btn-link {
   position: absolute;
-  top: 60px;
-  right: 70px; }
+  top: 20px;
+  right: 20px;
+  font-family: sans-serif; }
   .shop-btn-link div {
     text-align: center;
     width: 150px;
@@ -119,7 +129,8 @@ header {
   vertical-align: top;
   width: 225px;
   display: inline-block;
-  background: #ccc; }
+  background: #ccc;
+  overflow: scroll; }
 
 .items-list-item {
   border: 1px solid #bbb;
@@ -131,6 +142,16 @@ header {
   display: inline-block;
   font-size: 1.2em; }
 
+.cart-delete-btn {
+  margin: 5% 0 0 0;
+  display: block;
+  background-color: #a2a2a2;
+  text-align: center;
+  color: #222222;
+  font-family: sans-serif; }
+  .cart-delete-btn:hover {
+    background-color: #6f6f6f; }
+
 .items-list-item-image {
   float: right;
   width: 35px;
@@ -139,7 +160,9 @@ header {
 .items-card-view {
   vertical-align: top;
   width: 80%;
-  display: inline-block; }
+  display: inline-block;
+  overflow: scroll;
+  height: 710px; }
 
 .items-card-item {
   vertical-align: top;
@@ -147,7 +170,7 @@ header {
   background: #ccc;
   height: 200px;
   display: inline-block;
-  margin: 4em 0 0 9%;
+  margin: 2.5% 0 0 5%;
   border-radius: 5px;
   padding: 2em 2em 0 2em; }
 
@@ -181,5 +204,15 @@ header {
 
 .card-add-to-cart-button {
   float: right; }
+
+.cart-information-wrapper {
+  position: absolute;
+  height: 75%;
+  width: 84%;
+  top: 100px;
+  background-color: #ddd;
+  border: solid 2px black;
+  display: inline-block;
+  margin: 0 0 20% 15%; }
 
 /*# sourceMappingURL=styles.css.map */

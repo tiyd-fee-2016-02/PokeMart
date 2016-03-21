@@ -1,15 +1,9 @@
-pokeApp.controller("ItemsController", ['$scope', 'storeItems', '$http', function($scope, storeItems, $http) {
+pokeApp.controller("ItemsController", ['$scope', 'storeItems', '$http', 'cartItems', function($scope, storeItems, $http, cartItems) {
   $scope.greeting = 'Hola!  Yo soy Items Controller';
   storeItems.success(function(data) {
       $scope.items = data;
   });
-  function doWhatMyHeartTellsMe(){
-    var position = $(".items-card-view").prop('scrollHeight');
-    $(".items-card-view").scrollTop(position);
-  }
-  // $(".items-card-holder").on('click', '.card-add-to-cart-button', function(){
-  //   console.log($this);
-  // });
+
 
   $scope.cartValues = function(item){
     console.log(item);
@@ -29,6 +23,11 @@ pokeApp.controller("ItemsController", ['$scope', 'storeItems', '$http', function
   $scope.returnToStore = function(){
     $scope.dynamicClass = '';
   };
+
+  cartItems.success(function(data){
+    $scope.cart = data;
+  });
+
 
 
 }]);//close controller
@@ -55,6 +54,11 @@ pokeApp.controller('CartController', ['$scope', '$http', function($scope, $http)
     console.log(total)
     };
 
+  $scope.totalItems = function(){
+    total = $scope.items.length;
+    return total;
+  }
+
   $scope.cartDelete = function(item){
     console.log(item.id)
     $.ajax({
@@ -65,6 +69,26 @@ pokeApp.controller('CartController', ['$scope', '$http', function($scope, $http)
             });
     $(this).remove();
   }
+
+  $scope.receiptValues = function(item){
+    console.log(item);
+    $scope.dynamicClass = 'showing';
+    $scope.totalItems = 'You Bought ' + $scope.items.length + ' items!';
+    $scope.totalPrice = cartTotal();
+  };
+
+  $scope.returnToStore = function(){
+    $scope.dynamicClass = '';
+    console.log($scope.items.length)
+    for(var i = 0; i <= $scope.items.length; i++){
+      $.ajax({
+            url: 'http://localhost:3000/cart/'+i,
+            traditional: true,
+            success: function(data){},
+            type: 'DELETE'
+            });
+          }
+  };
 
 }]);
 

@@ -213,90 +213,24 @@
   "cart": [
     {
       "id": 1,
-      "name": "Pokéball",
-      "price": "₹200",
-      "description": "catch em all",
-      "picture_url": "http://pokeapi.co/media/sprites/items/poke-ball.png",
+      "name": "Burn Heal",
+      "price": "₹250",
+      "description": "Need some cool for that burn",
+      "picture_url": "http://pokeapi.co/media/sprites/items/burn-heal.png",
       "reviews": [
-        "IT REALLY DOES CATCH 'EM ALL",
-        "I USE IT EVERY DAY!!!  SO MANY WILD POKEMON!!! ALL MINE!!!"
+        "MAKE THOSE UGLY BURNS DISAPPEAR....IT REALLY DOES WORK",
+        "AFTER A NASTY RUN IN ITH A CHARIZARD, BURN HEAL MADE MY CLEFAIRY WHOLE AGAIN..I COULDN'T RECCOMEND IT MORE!!!!"
       ]
     },
     {
       "id": 2,
-      "name": "Pokéball",
-      "price": "₹200",
-      "description": "catch em all",
-      "picture_url": "http://pokeapi.co/media/sprites/items/poke-ball.png",
+      "name": "Full Heal",
+      "price": "₹600",
+      "description": "Cures all status ailments!",
+      "picture_url": "http://pokeapi.co/media/sprites/items/full-heal.png",
       "reviews": [
-        "IT REALLY DOES CATCH 'EM ALL",
-        "I USE IT EVERY DAY!!!  SO MANY WILD POKEMON!!! ALL MINE!!!"
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Pokéball",
-      "price": "₹200",
-      "description": "catch em all",
-      "picture_url": "http://pokeapi.co/media/sprites/items/poke-ball.png",
-      "reviews": [
-        "IT REALLY DOES CATCH 'EM ALL",
-        "I USE IT EVERY DAY!!!  SO MANY WILD POKEMON!!! ALL MINE!!!"
-      ]
-    },
-    {
-      "id": 4,
-      "name": "Pokéball",
-      "price": "₹200",
-      "description": "catch em all",
-      "picture_url": "http://pokeapi.co/media/sprites/items/poke-ball.png",
-      "reviews": [
-        "IT REALLY DOES CATCH 'EM ALL",
-        "I USE IT EVERY DAY!!!  SO MANY WILD POKEMON!!! ALL MINE!!!"
-      ]
-    },
-    {
-      "id": 5,
-      "name": "Pokéball",
-      "price": "₹200",
-      "description": "catch em all",
-      "picture_url": "http://pokeapi.co/media/sprites/items/poke-ball.png",
-      "reviews": [
-        "IT REALLY DOES CATCH 'EM ALL",
-        "I USE IT EVERY DAY!!!  SO MANY WILD POKEMON!!! ALL MINE!!!"
-      ]
-    },
-    {
-      "id": 6,
-      "name": "Pokéball",
-      "price": "₹200",
-      "description": "catch em all",
-      "picture_url": "http://pokeapi.co/media/sprites/items/poke-ball.png",
-      "reviews": [
-        "IT REALLY DOES CATCH 'EM ALL",
-        "I USE IT EVERY DAY!!!  SO MANY WILD POKEMON!!! ALL MINE!!!"
-      ]
-    },
-    {
-      "id": 7,
-      "name": "Pokéball",
-      "price": "₹200",
-      "description": "catch em all",
-      "picture_url": "http://pokeapi.co/media/sprites/items/poke-ball.png",
-      "reviews": [
-        "IT REALLY DOES CATCH 'EM ALL",
-        "I USE IT EVERY DAY!!!  SO MANY WILD POKEMON!!! ALL MINE!!!"
-      ]
-    },
-    {
-      "id": 8,
-      "name": "Pokéball",
-      "price": "₹200",
-      "description": "catch em all",
-      "picture_url": "http://pokeapi.co/media/sprites/items/poke-ball.png",
-      "reviews": [
-        "IT REALLY DOES CATCH 'EM ALL",
-        "I USE IT EVERY DAY!!!  SO MANY WILD POKEMON!!! ALL MINE!!!"
+        "MY TEAM IS TOTALLY HEALED LIKE, FULLY....CRAZYTOWN",
+        "THIS REALLY WORKS!!!!"
       ]
     }
   ]

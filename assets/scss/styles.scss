@@ -10,7 +10,7 @@ a{
 // Header
 
 header{
-  background: #ddd;
+  background: #35538a;
    img{
      display: inline-block;
      width: 150px;
@@ -20,8 +20,8 @@ header{
   display: inline-block;
   vertical-align: top;
   text-align: center;
-  width: 213px;
-  margin-top: 1.5em;
+  width: 500px;
+  margin-top: 1em;
   margin-left: 22em;
   margin-bottom: 2em;
 }
@@ -29,10 +29,17 @@ header{
 .title{
   font-size: 2em;
   font-weight: bold;
+  display: inline-block;
+  color: white;
+  font-family: sans-serif;
 }
 
 .sub-title{
   font-size: 1.3em;
+  display: inline-block;
+  color: white;
+  margin: 0 0 0 20px;
+  font-family: sans-serif;
 }
 
 // Login Page
@@ -72,9 +79,11 @@ header{
 
 .items-search-bar{
   position: absolute;
-  top: 15px;
-  right: 70px;
+  top: 20px;
+  right: 200px;
   font-size: 1.25em;
+  color: white;
+  font-family: sans-serif;
   input{
     font-size: 1em;
   }
@@ -138,8 +147,10 @@ header{
 
 .shop-btn-link{
   position: absolute;
-  top: 60px;
-  right: 70px;
+  top: 20px;
+  right: 20px;
+  // color: white;
+  font-family: sans-serif;
   div{
     text-align: center;
     width: 150px;
@@ -157,6 +168,7 @@ header{
   width: 225px;
   display: inline-block;
   background: #ccc;
+  overflow: scroll;
 }
 
 .items-list-item{
@@ -170,7 +182,17 @@ header{
   display: inline-block;
   font-size: 1.2em;
 }
-
+.cart-delete-btn{
+  margin: 5% 0 0 0;
+  display: block;
+  background-color: darken(#bbb, 10%);
+  text-align: center;
+  color: darken(#bbb, 60%);
+  font-family: sans-serif;
+  &:hover{
+    background-color: darken(#bbb, 30%);
+  }
+}
 .items-list-item-image{
   float: right;
   width: 35px;
@@ -198,9 +220,9 @@ header{
   height: 200px;
   display: inline-block;
   // border: 1px solid blue;
-  // margin: 0 0 0 9%;
+  margin: 2.5% 0 0 5%;
   border-radius: 5px;
-  // padding: 2em 2em 0 2em;
+  padding: 2em 2em 0 2em;
 }
 
 .items-card-item-name{
@@ -243,12 +265,18 @@ header{
 }
 
 .cart-information-wrapper{
-  // height: 40%;
-  // width: 40%;
-  color: white;
-  background-color: blue;
-  float: right;
-  vertical-align: top;
+  position: absolute;
+  height: 75%;
+  width: 84%;
+  top: 100px;
+  background-color: #ddd;
+  // float: right;
+  // vertical-align: top;
   border: solid 2px black;
+  display: inline-block;
+  margin: 0 0 20% 15%;
+  .cart-text{
+
+  }
 
 }
