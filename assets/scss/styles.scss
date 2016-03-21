@@ -69,7 +69,8 @@ header{
   width: 100px;
   background-image: linear-gradient(to bottom, #ddd, #aaa);
   &:hover{
-    background-color: darken(#aaa, 20%);
+    background-image: linear-gradient(to bottom, #777, #555);
+    color: white;
   }
 }
 
@@ -129,7 +130,8 @@ header{
   margin: 2em 0 1em 0;
   background-image: linear-gradient(to bottom, #fff, #ccc);
   &:hover{
-    background-color: darken(#aaa, 20%);
+    background-image: linear-gradient(to bottom, #777, #555);
+    color: white;
   }
 }
 
@@ -169,7 +171,8 @@ header{
     background-image: linear-gradient(to bottom, #aaa, #bbb);
   }
   &:hover{
-    background-color: darken(#aaa, 20%);
+    background-image: linear-gradient(to bottom, #777, #555);
+    color: white;
   }
 }
 
@@ -270,7 +273,8 @@ header{
     border: 1px solid #bbb;
     background-image: linear-gradient(to bottom, #fff, #ccc);
     &:hover{
-      background-color: darken(#aaa, 20%);
+      background-image: linear-gradient(to bottom, #777, #555);
+      color: white;
     }
   }
 }

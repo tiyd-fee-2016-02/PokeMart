@@ -32,6 +32,10 @@ var pokeApp = angular.module("pokeApp", ['ngRoute']);
             templateUrl : 'pages/login.html',
             // controller  : 'DetailsController'
         })
+        .when('/admin', {
+          templateUrl: 'pages/admin.html',
+          controller: 'AdminController'
+        })
         .otherwise({
       redirectTo: '/'
     });

@@ -1,0 +1,61 @@
+
+<div class="items-wrapper">
+  <header class="header">
+    <img src="assets/img/pokemart-logo.gif">
+    <div class="title-wrapper">
+      <h1 class="title">Pokémart</h1>
+      <h3 class="sub-title">Save money. Train better.</h3>
+    </div>
+    <label class="items-search-bar">Search: <input ng-model="search"></label>
+    <a href="#/edit" class="shop-btn-link"><div class="to-shop-btn">Add Item</div></a>
+  </header>
+
+  <div class="items-list-view">
+    <!-- <img src="{{items}}" alt='sprite'></img> -->
+    <!-- {{items}} -->
+    <ul class="items-list-holder">
+      <li class="items-list-item" ng-repeat="item in items track by $index">
+        <div class="items-list-item-name">{{items[$index].name}}:</div>
+        <div class="items-list-item-price">{{items[$index].price}}</div>
+        <img class="items-list-item-image" src="{{items[$index].picture_url}}">
+      </li>
+    </ul>
+  </div>
+
+  <div class="items-card-view" style="overflow: scroll; height:710px;">
+    <ul class="items-card-holder">
+      <li class="items-card-item" ng-repeat="item in items  | filter:search" id="{{$index}}">
+        <div class="items-card-item-name">{{item.name}}</div>
+        <div class="items-card-item-price">{{item.price}}</div>
+        <img class="items-card-item-image" src="{{item.picture_url}}">
+        <div class="items-card-item-description">{{item.description}}</div>
+        <div class="card-button-holder">
+          <a href="#/items"><div ng-click='detailValues(item)' class="card-details-button">Details</div></a><!--Add details as a modal??-->
+          <a href="#/edit"><div ng-click='' class="card-add-to-cart-button">Edit Item</div></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="modal" ng-class="dynamicClass">
+    <div class="modal-details-container">
+      <div class="details-name" ng-bind="myTextName"></div>
+      <div class="details-price" ng-bind="myTextPrice"></div>
+      <div class="details-description" ng-bind="myTextDescription"></div>
+      <br>
+      Reviews:
+      <div class="details-reviews" ng-bind="myTextReviews"></div>
+      <div class="modal-close-button" ng-click="returnToStore()">Return To Store</div></a>
+    </div>
+  </div>
+
+  <footer class='items-footer'>
+    <ul class='items-footer-cart'>
+      <li class='footer-cart-text'></li>
+      <li class='footer-cart-items' ng-repeat='car in cart'>
+    <img class="footer-cart-sprite" src="{{car.picture_url}}">
+  </li>
+  </ul>
+  </footer>
+
+</div>

@@ -111,3 +111,10 @@ pokeApp.controller('CreateController', ['$scope', function($scope){
 pokeApp.controller('EditController',['$scope', function($scope){
   $scope.message = "This is the Edit Controller"
 }]);
+
+pokeApp.controller('AdminController',  ['$scope', 'storeItems', function($scope, storeItems){
+  $scope.message = 'Hola! Yo Soy el Admin Controller!'
+  storeItems.success(function(data) {
+      $scope.items = data;
+  });
+}]);
