@@ -185,6 +185,8 @@ header{
   display: inline-block;
   background: #ccc;
   overflow: scroll;
+  position: absolute;
+  height: 80%;
 }
 
 .items-list-item{
@@ -225,18 +227,18 @@ header{
   // position: fixed;
   overflow: scroll;
   height: 710px;
-  // float: right;
+  float: right;
   // border: 1px solid blue;
 }
 
 .items-card-item{
   vertical-align: top;
-  width: 35%;
+  width: 40%;
   background: #ccc;
   height: 200px;
   display: inline-block;
   // border: 1px solid blue;
-  margin: 2.5% 0 0 5%;
+  margin: 2.5% 5% 0 0;
   border-radius: 5px;
   padding: 2em 2em 0 2em;
 }
@@ -315,10 +317,10 @@ header{
 
 .cart-information-wrapper{
   position: absolute;
-  height: 75%;
+  height: 50%;
   width: 84%;
   top: 100px;
-  background-color: #ddd;
+  // background-color: #ddd;
   // float: right;
   // vertical-align: top;
   // border: solid 2px black;

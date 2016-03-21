@@ -14,7 +14,7 @@ var pokeApp = angular.module("pokeApp", ['ngRoute']);
         })
         .when('/create', {
             templateUrl : 'pages/create.html',
-            controller  : 'NewController'
+            controller  : 'CreateController'
         })
         .when('/edit', {
             templateUrl : 'pages/edit.html',

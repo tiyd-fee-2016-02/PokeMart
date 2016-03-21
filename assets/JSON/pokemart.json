@@ -218,14 +218,5 @@
       "reviews": []
     }
   ],
-  "cart": [
-    {
-      "id": 1,
-      "name": "POkemon thing ",
-      "price": 3500,
-      "description": "this is a thing that does stuff for you",
-      "picture_url": "www.img.com/img",
-      "reviews": []
-    }
-  ]
+  "cart": []
 }
