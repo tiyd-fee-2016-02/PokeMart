@@ -44,9 +44,17 @@
         <div>YOUR CART:</div>
         <div class="details-name" ng-bind="totalItems"></div>
         <div class="details-price" ng-bind="totalPrice"></div>
-        <div class="modal-close-button" ng-click="returnToStore()">Return To Store</div>
+        <a href='#/items'><div class="modal-close-button" ng-click="returnToStore()">Return To Store</div></a>
       </div>
     </div>
   </div>
+  <footer class='items-footer'>
+    <ul class='items-footer-cart'>
+      <li class='footer-cart-text'>PURCHASED ITEMS:</li>
+      <li class='footer-cart-items' ng-repeat='item in items'>
+    <img class="footer-cart-sprite" src="{{item.picture_url}}">
+  </li>
+  </ul>
+  </footer>
 
 </div>

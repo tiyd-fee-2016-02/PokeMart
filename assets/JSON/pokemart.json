@@ -210,28 +210,5 @@
       ]
     }
   ],
-  "cart": [
-    {
-      "id": 1,
-      "name": "Burn Heal",
-      "price": "₹250",
-      "description": "Need some cool for that burn",
-      "picture_url": "http://pokeapi.co/media/sprites/items/burn-heal.png",
-      "reviews": [
-        "MAKE THOSE UGLY BURNS DISAPPEAR....IT REALLY DOES WORK",
-        "AFTER A NASTY RUN IN ITH A CHARIZARD, BURN HEAL MADE MY CLEFAIRY WHOLE AGAIN..I COULDN'T RECCOMEND IT MORE!!!!"
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Full Heal",
-      "price": "₹600",
-      "description": "Cures all status ailments!",
-      "picture_url": "http://pokeapi.co/media/sprites/items/full-heal.png",
-      "reviews": [
-        "MY TEAM IS TOTALLY HEALED LIKE, FULLY....CRAZYTOWN",
-        "THIS REALLY WORKS!!!!"
-      ]
-    }
-  ]
+  "cart": []
 }

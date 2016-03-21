@@ -45,15 +45,16 @@
       <br>
       Reviews:
       <div class="details-reviews" ng-bind="myTextReviews"></div>
-      <div class="modal-close-button" ng-click="returnToStore()">Return To Store</div>
+      <div class="modal-close-button" ng-click="returnToStore()">Return To Store</div></a>
     </div>
   </div>
 
-  <footer class='footer'>
-    <img class="items-card-item-image" src="{{cart[0].picture_url}}">
-    <ul class='footer-cart'>
-      <li class='footer-cart-items' ng-repeat='cart in carts track by $index'>
-    <img class="items-card-item-image" src="{{cart[$index].picture_url}}">
+  <footer class='items-footer'>
+    <!-- <img class="items-card-item-image" src="{{cart[0].picture_url}}"> -->
+    <ul class='items-footer-cart'>
+      <li class='footer-cart-text'>PURCHASED ITEMS:</li>
+      <li class='footer-cart-items' ng-repeat='car in cart'>
+    <img class="footer-cart-sprite" src="{{car.picture_url}}">
   </li>
   </ul>
   </footer>

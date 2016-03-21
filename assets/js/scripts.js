@@ -6,7 +6,7 @@ $(function() {
 // $.getJSON("http://localhost:3000/items", function(data) {
 //   console.log(data[0].reviews[0]);
 
-});
+// });
 //
 //
 // $.ajax({
