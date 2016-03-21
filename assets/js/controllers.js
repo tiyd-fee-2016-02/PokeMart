@@ -108,8 +108,12 @@ pokeApp.controller('CreateController', ['$scope', function($scope){
   $scope.message = "This is the Create Controller"
 }]);
 
-pokeApp.controller('EditController',['$scope', function($scope){
+pokeApp.controller('EditController',['$scope', '$http', function($scope, $http){
   $scope.message = "This is the Edit Controller"
+  $scope.saveItem = function(){
+    
+  }
+
 }]);
 
 pokeApp.controller('AdminController',  ['$scope', 'storeItems', function($scope, storeItems){
