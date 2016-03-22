@@ -1,4 +1,4 @@
-// ;(function(){
+
 // var xhr = new XMLHttpRequest();
 // xhr.onreadystatechange = function(){
 
@@ -8,30 +8,46 @@ var pokeApp = angular.module("pokeApp", ['ngRoute']);
 
  pokeApp.config(function($routeProvider) {
     $routeProvider
-        .when('/', {
+        .when('/items', {
             templateUrl : 'pages/items.html',
-            // controller  : 'ItemsController'
+            controller  : 'ItemsController'
         })
         .when('/create', {
-            templateUrl : 'create.html',
-            // controller  : 'CreateController'
+            templateUrl : 'pages/create.html',
+            controller  : 'CreateController'
         })
         .when('/edit', {
-            templateUrl : 'edit.html',
-            // controller  : 'EditController'
+            templateUrl : 'pages/edit.html',
+            controller  : 'EditController'
         })
         .when('/details', {
-            templateUrl : 'details.html',
-            // controller  : 'DetailsController'
+            templateUrl : 'pages/details.html',
+            controller  : 'DetailsController'
         })
         .when('/cart', {
-            templateUrl : 'cart.html',
-            // controller  : 'CartController'
+            templateUrl : 'pages/cart.html',
+            controller  : 'CartController'
+        })
+        .when('/', {
+            templateUrl : 'pages/login.html',
+            // controller  : 'DetailsController'
+        })
+        .when('/admin', {
+          templateUrl: 'pages/admin.html',
+          controller: 'AdminController'
         })
         .otherwise({
       redirectTo: '/'
     });
-
 });
-// };
-// });
+
+
+    pokeApp.factory('storeItems', function ($q, $http) {
+
+      return $http.get('http://localhost:3000/items');
+    });
+
+    pokeApp.factory('cartItems', function ($q, $http) {
+
+      return $http.get('http://localhost:3000/cart');
+    });

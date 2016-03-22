@@ -1,116 +1,230 @@
-[
-  {
-    "name": "Pokéball",
-    "price": "&#8377;200",
-    "description": "catch em all",
-    "picture_url": "http://pokeapi.co/media/sprites/items/poke-ball.png"
-  },
-  {
-    "name": "Ultra Ball",
-    "price": "&#8377;1200",
-    "description": "catch more wild pokemon",
-    "picture_url": "http://pokeapi.co/media/sprites/items/ultra-ball.png"
-  },
-  {
-    "name": "Super Potion",
-    "price": "&#8377;700",
-    "description": "heal your wounded pokefriends",
-    "picture_url": "http://pokeapi.co/media/sprites/items/super-potion.png"
-  },
-  {
-    "name": "Max Potion",
-    "price": "&#8377;2500",
-    "description": "heal your wounded pokefriends to the max!!",
-    "picture_url": "http://pokeapi.co/media/sprites/items/max-potion.png"
-  },
-  {
-    "name": "Revive",
-    "price": "&#8377;1500",
-    "description": "Revive your pokemon and bring back to half health",
-    "picture_url": "http://pokeapi.co/media/sprites/items/revive.png"
-  },
-  {
-    "name": "Parlyz Heal",
-    "price": "&#8377;200",
-    "description": "Give your paralyzed friend some mobility!",
-    "picture_url": "http://pokeapi.co/media/sprites/items/paralyze-heal.png"
-  },
-  {
-    "name": "Burn Heal",
-    "price": "&#8377;250",
-    "description": "Need some cool for that burn",
-    "picture_url": "http://pokeapi.co/media/sprites/items/burn-heal.png"
-  },
-  {
-    "name": "Full Heal",
-    "price": "&#8377;600",
-    "description": "Cures all status ailments!",
-    "picture_url": "http://pokeapi.co/media/sprites/items/full-heal.png"
-  },
-  {
-    "name": "Repel",
-    "price": "&#8377;350",
-    "description": "Low level pokemon now fear your stench",
-    "picture_url": "http://pokeapi.co/media/sprites/items/repel.png"
-  },
-  {
-    "name": "Max Repel",
-    "price": "&#8377;700",
-    "description": "All pokemon now fear your stench",
-    "picture_url": "http://pokeapi.co/media/sprites/items/max-repel.png"
-  },
-  {
-    "name": "Great Ball",
-    "price": "&#8377;600",
-    "description": "A great catcher of pokemon",
-    "picture_url": "http://pokeapi.co/media/sprites/items/great-ball.png"
-  },
-  {
-    "name": "Potion",
-    "price": "&#8377;300",
-    "description": "Restores 20 hp!!",
-    "picture_url": "http://pokeapi.co/media/sprites/items/potion.png"
-  },
-  {
-    "name": "Hyper Potion",
-    "price": "&#8377;1200",
-    "description": "Restores 200 hp!!",
-    "picture_url": "http://pokeapi.co/media/sprites/items/hyper-potion.png"
-  },
-  {
-    "name": "Full Restore",
-    "price": "&#8377;3000",
-    "description": "Restores all health and cures all status effects!!",
-    "picture_url": "http://pokeapi.co/media/sprites/items/full-restore.png"
-  },
-  {
-    "name": "Antidote",
-    "price": "&#8377;100",
-    "description": "Cures poison",
-    "picture_url": "http://pokeapi.co/media/sprites/items/antidote.png"
-  },
-  {
-    "name": "Awakening",
-    "price": "&#8377;250",
-    "description": "Cures sleep",
-    "picture_url": "http://pokeapi.co/media/sprites/items/awakening.png"
-  },
-  {
-    "name": "Ice Heal",
-    "price": "&#8377;250",
-    "description": "Cures freezing",
-    "picture_url": "http://pokeapi.co/media/sprites/items/ice-heal.png"
-  },
-  {
-    "name": "Escape Rope",
-    "price": "&#8377;550",
-    "description": "RUN AWAY!!",
-    "picture_url": "http://pokeapi.co/media/sprites/items/escape-rope.png"
-  },
-  {
-    "name": "Super Repel",
-    "price": "&#8377;500",
-    "description": "Wild pokemon flee enmasse from your overpowering odor",
-    "picture_url": "http://pokeapi.co/media/sprites/items/super-repel.png"
-  }
-]
+{
+  "items": [
+    {
+      "id": 0,
+      "name": "Pokéball",
+      "price": "₹200",
+      "description": "catch em all",
+      "picture_url": "http://pokeapi.co/media/sprites/items/poke-ball.png",
+      "reviews": [
+        "IT REALLY DOES CATCH 'EM ALL",
+        "I USE IT EVERY DAY!!!  SO MANY WILD POKEMON!!! ALL MINE!!!"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Ultra Ball",
+      "price": "₹1200",
+      "description": "catch more wild pokemon",
+      "picture_url": "http://pokeapi.co/media/sprites/items/ultra-ball.png",
+      "reviews": [
+        "IT REALLY DOES CATCH 'EM ALL EVEN BETTER",
+        "I USE IT EVERY DAY!!!  SO MANY WILD POKEMON!!! ALL MINE!!!  FOREVER1111"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Super Potion",
+      "price": "₹700",
+      "description": "heal your wounded pokefriends",
+      "picture_url": "http://pokeapi.co/media/sprites/items/super-potion.png",
+      "reviews": [
+        "MY POKÉFRIENDS ARE SO DANG HEALED",
+        "I LOVE THIS THING SO MUCH"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Max Potion",
+      "price": "₹2500",
+      "description": "heal your wounded pokefriends to the max!!",
+      "picture_url": "http://pokeapi.co/media/sprites/items/max-potion.png",
+      "reviews": [
+        "MY POKÉFRIENDS ARE SO DANG HEALED TO THE MAX!!!",
+        "WHEN YOU REALLY WANNA HEAL SOME POKÉMON, THIS IS YOUR THING!!!!!!"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Revive",
+      "price": "₹1500",
+      "description": "Revive your pokemon and bring back to half health",
+      "picture_url": "http://pokeapi.co/media/sprites/items/revive.png",
+      "reviews": [
+        "YOU POKÉMON REALLY DO GO FROM ASLEEP TO AWAKE...IT'S AMAZING!!!!",
+        "NOT ONLY DO THEY WAKE UP...THEY GET HALF THEIR HEALTH BACK!!!   WHAT A DEAL!!!!!!"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Parlyz Heal",
+      "price": "₹200",
+      "description": "Give your paralyzed friend some mobility!",
+      "picture_url": "http://pokeapi.co/media/sprites/items/paralyze-heal.png",
+      "reviews": [
+        "WHO NEEDS FAITH HEALERS WHEN YOU HAVE PALYZ HEAL",
+        "MY POKEMON CAN WALK AGAIN, THANKS POKÉMART"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Burn Heal",
+      "price": "₹250",
+      "description": "Need some cool for that burn",
+      "picture_url": "http://pokeapi.co/media/sprites/items/burn-heal.png",
+      "reviews": [
+        "MAKE THOSE UGLY BURNS DISAPPEAR....IT REALLY DOES WORK",
+        "AFTER A NASTY RUN IN ITH A CHARIZARD, BURN HEAL MADE MY CLEFAIRY WHOLE AGAIN..I COULDN'T RECCOMEND IT MORE!!!!"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Full Heal",
+      "price": "₹600",
+      "description": "Cures all status ailments!",
+      "picture_url": "http://pokeapi.co/media/sprites/items/full-heal.png",
+      "reviews": [
+        "MY TEAM IS TOTALLY HEALED LIKE, FULLY....CRAZYTOWN",
+        "THIS REALLY WORKS!!!!"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Repel",
+      "price": "₹350",
+      "description": "Low level pokemon now fear your stench",
+      "picture_url": "http://pokeapi.co/media/sprites/items/repel.png",
+      "reviews": [
+        "IT KEEPS WILD POKÉMON AWAY, WHAT MORE DO YOU WANT?!???!",
+        "I USE IT EVERY DAY!!!  SO MANY WILD POKEMON!!! ALL STAYING AWAY FROM ME!!!"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Max Repel",
+      "price": "₹700",
+      "description": "All pokemon now fear your stench",
+      "picture_url": "http://pokeapi.co/media/sprites/items/max-repel.png",
+      "reviews": [
+        "KEEPS WILD POKÉMON AWAY FOR HOURS AND HOURS, IF YOU WANT TO TAKE A STROLL WITHOUT SEEING POKÉMON, MAX REPEL IS THE PRODUCT FOR YOU",
+        "MY TEAM MADE IT TO CELADON CITY INTACT ALL THANKS TO MAX REPEL!!!"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Great Ball",
+      "price": "₹600",
+      "description": "A great catcher of pokemon",
+      "picture_url": "http://pokeapi.co/media/sprites/items/great-ball.png",
+      "reviews": [
+        "IT REALLY DOES CATCH 'EM ALL, AND DOES, CONSTANTLY",
+        "I USE IT EVERY DAY!!!  SO MANY WILD POKEMON!!! ALL MINE!!!"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Potion",
+      "price": "₹300",
+      "description": "Restores 20 hp!!",
+      "picture_url": "http://pokeapi.co/media/sprites/items/potion.png",
+      "reviews": [
+        "NEED A POKÉ PICK-ME-UP?  POTION IS JUST THE THING!!!!!",
+        "I GIVE MY PIKACHU A POTION EVERY MORNING, IT HELPS!!!!!"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Hyper Potion",
+      "price": "₹1200",
+      "description": "Restores 200 hp!!",
+      "picture_url": "http://pokeapi.co/media/sprites/items/hyper-potion.png",
+      "reviews": [
+        "NEED A HYPER-POKÉ PICK-ME-UP?  HYPER POTION IS JUST THE THING!!!!!",
+        "I GIVE MY PIKACHU A HYPER POTION EVERY MORNING, IT HYPER HELPS!!!!!"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Full Restore",
+      "price": "₹3000",
+      "description": "Restores all health and cures all status effects!!",
+      "picture_url": "http://pokeapi.co/media/sprites/items/full-restore.png",
+      "reviews": [
+        "MY POKEMON WAS DEAD ON ITS' FEET, NOW IT'S FULLY HEALTHFUL!!!!!   THANKS FULL RESTORE!!!",
+        "GET THE EDGE YOU NEED IN BATTLE, USE FULL RESTORE!!!"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Antidote",
+      "price": "₹100",
+      "description": "Cures poison",
+      "picture_url": "http://pokeapi.co/media/sprites/items/antidote.png",
+      "reviews": [
+        "GET POISON GONE, USE THIS THING!!!!",
+        "WHENEVER MY POKÉMON GET POISONED, ANTIDOTE CURES 'EM QUICK!!!'"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Awakening",
+      "price": "₹250",
+      "description": "Cures sleep",
+      "picture_url": "http://pokeapi.co/media/sprites/items/awakening.png",
+      "reviews": [
+        "NEED A POKÉ PICK-ME-UP?  AWAKENING IS JUST THE THING!!!!!",
+        "I GIVE MY PIKACHU AWAKENING EVERY MORNING, IT SURE DOES WAKE THUNDERGOD UP!!!!"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Ice Heal",
+      "price": "₹250",
+      "description": "Cures freezing",
+      "picture_url": "http://pokeapi.co/media/sprites/items/ice-heal.png",
+      "reviews": [
+        "WHEN MY POKEMON GETS COLD I USE ICE HEAL EVERY TIME",
+        "ICE.  HEALED."
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Escape Rope",
+      "price": "₹550",
+      "description": "RUN AWAY!!",
+      "picture_url": "http://pokeapi.co/media/sprites/items/escape-rope.png",
+      "reviews": [
+        "WHEN I NEED TO GET OUT OF A CAVE QUICK, I ALWAYS HAVE AN ESCAPE ROPE HANDY",
+        "I CAN'T COUNT THE NUMBER OF TIMES ESCAPE ROPE DONE SAVED ME AND MY POKEMON"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Super Repel",
+      "price": "₹500",
+      "description": "Wild pokemon flee enmasse from your overpowering odor",
+      "picture_url": "http://pokeapi.co/media/sprites/items/super-repel.png",
+      "reviews": [
+        "WHEN I REALLY DON'T WANNA SEE ANY POKÉMON BUT MY OWN, I USE SUPER REPEL.  IT SUPER WORKS!!!",
+        "WHERE WOULD I BE WITHOUT MY SUPER REPEL?"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "",
+      "price": "",
+      "description": "",
+      "picture_url": "",
+      "reviews": []
+    },
+    {
+      "id": 20,
+      "name": "",
+      "price": "",
+      "description": "",
+      "picture_url": "",
+      "reviews": []
+    }
+  ],
+  "cart": []
+}

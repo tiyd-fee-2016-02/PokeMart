@@ -1,0 +1,305 @@
+body {
+  background: #eee;
+  font-family: sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+header {
+  background: #35538a; }
+  header img {
+    display: inline-block;
+    width: 150px; }
+
+.title-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 500px;
+  margin-top: 1em;
+  margin-left: 22em;
+  margin-bottom: 2em; }
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  display: inline-block;
+  color: white;
+  font-family: sans-serif; }
+
+.sub-title {
+  font-size: 1.3em;
+  display: inline-block;
+  color: white;
+  margin: 0 0 0 20px;
+  font-family: sans-serif; }
+
+.login-box {
+  background: #aaa;
+  width: 50%;
+  margin: 10em auto;
+  padding: 2em;
+  text-align: center;
+  font-size: 1em; }
+
+.login-button-holder {
+  width: 60%;
+  margin: 3em auto;
+  margin-bottom: 5em; }
+
+.btn {
+  display: inline-block;
+  width: 100px;
+  background-image: linear-gradient(to bottom, #ddd, #aaa); }
+  .btn:hover {
+    background-image: linear-gradient(to bottom, #777, #555);
+    color: white; }
+
+.login-admin {
+  float: left; }
+
+.login-customer {
+  float: right; }
+
+.items-search-bar {
+  position: absolute;
+  top: 20px;
+  right: 200px;
+  font-size: 1.25em;
+  color: white;
+  font-family: sans-serif; }
+  .items-search-bar input {
+    font-size: 1em; }
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(50, 50, 50, 0.8);
+  display: none; }
+
+.modal-details-container {
+  width: 35%;
+  margin: auto;
+  margin-top: 19em;
+  padding: 3em 3em 1em 3em;
+  background: rgba(200, 200, 200, 0.9); }
+
+.showing {
+  display: block; }
+
+.modal-close-button {
+  text-align: center;
+  display: inline-block;
+  width: 150px;
+  padding: 5px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  margin: 2em 0 1em 0;
+  background-image: linear-gradient(to bottom, #fff, #ccc); }
+  .modal-close-button:hover {
+    background-image: linear-gradient(to bottom, #777, #555);
+    color: white; }
+
+.details-name,
+.details-price {
+  display: inline-block;
+  font-size: 1.25em; }
+
+.details-price {
+  margin-left: 1em; }
+
+.details-description {
+  margin-top: 1em;
+  font-size: 1em; }
+
+.details-reviews {
+  margin-top: 1em; }
+
+.shop-btn-link {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-family: sans-serif; }
+  .shop-btn-link div {
+    text-align: center;
+    width: 150px;
+    padding: 5px 0;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, #aaa, #bbb); }
+  .shop-btn-link:hover {
+    background-image: linear-gradient(to bottom, #777, #555);
+    color: white; }
+
+.items-list-view {
+  vertical-align: top;
+  width: 225px;
+  display: inline-block;
+  background: #ccc;
+  overflow: scroll;
+  position: absolute;
+  height: 80%; }
+
+.items-list-item {
+  border: 1px solid #bbb;
+  padding: .5em 0; }
+
+.items-list-item-name,
+.items-list-item-price,
+.items-list-item-image {
+  display: inline-block;
+  font-size: 1.2em; }
+
+.cart-delete-btn {
+  margin: 5% 0 0 0;
+  display: block;
+  background-color: #a2a2a2;
+  text-align: center;
+  color: #222222;
+  font-family: sans-serif; }
+  .cart-delete-btn:hover {
+    background-color: #6f6f6f; }
+
+.items-list-item-image {
+  float: right;
+  width: 35px;
+  margin-top: -8px; }
+
+.items-card-view {
+  vertical-align: top;
+  width: 80%;
+  display: inline-block;
+  overflow: scroll;
+  height: 710px;
+  float: right; }
+
+.items-card-item {
+  vertical-align: top;
+  width: 40%;
+  background: #ccc;
+  height: 200px;
+  display: inline-block;
+  margin: 2.5% 5% 0 0;
+  border-radius: 5px;
+  padding: 2em 2em 0 2em; }
+
+.items-card-item-name {
+  font-size: 1.5em;
+  display: inline-block; }
+
+.items-card-item-price {
+  float: right;
+  font-size: 1.5em; }
+
+.items-card-item-image {
+  display: block;
+  margin: 1em auto 1em auto;
+  width: 50px; }
+
+.items-card-item-description {
+  text-align: center;
+  text-transform: capitalize; }
+
+.card-button-holder {
+  margin: 2em auto 0 auto;
+  width: 90%; }
+  .card-button-holder div {
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+    padding: 5px;
+    border: 1px solid #bbb;
+    background-image: linear-gradient(to bottom, #fff, #ccc); }
+    .card-button-holder div:hover {
+      background-image: linear-gradient(to bottom, #777, #555);
+      color: white; }
+
+.card-add-to-cart-button {
+  float: right; }
+  .card-add-to-cart-button:hover {
+    background-color: #777777; }
+
+.items-footer {
+  background-color: #35538a;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100px; }
+  .items-footer .footer-cart-items {
+    display: inline-block; }
+    .items-footer .footer-cart-items .footer-cart-sprite {
+      width: 40px; }
+  .items-footer .footer-cart-text {
+    display: block;
+    color: white;
+    line-height: 1.5em;
+    font-family: sans-serif; }
+
+.cart-information-wrapper {
+  position: absolute;
+  height: 50%;
+  width: 84%;
+  top: 100px;
+  display: inline-block;
+  margin: 0 0 20% 15%; }
+
+.edit-info-holder {
+  background: #aaa;
+  width: 40%;
+  margin: 4em auto 0 auto;
+  padding: 4em 4em 2em 4em;
+  border-radius: 5px; }
+  .edit-info-holder input {
+    font-size: 1em;
+    width: 60%;
+    margin-left: 1em;
+    margin-top: 2em; }
+  .edit-info-holder textarea {
+    font-size: .8em;
+    width: 60%;
+    max-width: 60%;
+    height: 6em;
+    max-height: 6em;
+    margin-left: 5px; }
+
+.edit-description {
+  margin-top: 2em; }
+
+.description-text {
+  display: inline-block;
+  vertical-align: top; }
+
+.edit-header {
+  font-size: 1.2em;
+  text-align: center;
+  margin: -1em 0 2em 0; }
+
+.edit-name-input {
+  margin-left: 2.4em !important; }
+
+.edit-price-input {
+  margin-left: 2.8em !important; }
+
+.edit-item-btn-holder {
+  width: 80%;
+  margin: 2.5em auto 0 auto; }
+  .edit-item-btn-holder div {
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+    padding: 6px 0;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, #aaa, #bbb); }
+    .edit-item-btn-holder div:hover {
+      background-image: linear-gradient(to bottom, #777, #555);
+      color: white; }
+
+.edit-save-btn {
+  float: right; }
+
+/*# sourceMappingURL=styles.css.map */

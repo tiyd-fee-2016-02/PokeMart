@@ -1,28 +1,32 @@
 $(function() {
 'use strict'
 
-var test = $('.json-test');
 
-var stuffPlz = $.getJSON("assets/JSON/pokemart.json", function(data) {
-  console.log(data);
-  // data[0].name = "Fluffy Bear"
-});
+//
+// $.getJSON("http://localhost:3000/items", function(data) {
+//   console.log(data[0].reviews[0]);
 
-$.post('http://localhost:8000/assets/JSON/pokemart.json', {"name": "fluffy"}).success(function(){
-  alert("YO");
-})
-.error(function(){
-  alert("NO");
-});
-
+// });
+//
+//
 // $.ajax({
 //   type: 'POST',
-//   url: 'assets/JSON/pokemart.json',
-//   data: '{"name":"fluffy"}',
-//   success: function(data){alert('data: '+ data); },
+//   url: 'http://localhost:3000/items',
+//   data: '{"name":"pikachu","description":"thundergod"}',
+//   success: function(data){alert('yo')},
 //   contentType: 'application/json',
 //   dataType: 'json'
 // });
-
+//
+// $.ajax({
+//
+//         url: 'http://localhost:3000/items/47c091af-c641-4a55-b359-bcb98beb70a9',
+//         data: { "name": "neel" },
+//         traditional: true,
+//         success: function(data){alert('yo')},
+//         type: 'DELETE'
+//
+//         });
+//
 
 });
