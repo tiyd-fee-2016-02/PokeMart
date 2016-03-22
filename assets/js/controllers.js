@@ -32,6 +32,12 @@ pokeApp.controller("ItemsController", ['$scope', 'storeItems', '$http', 'cartIte
     $scope.cart = data;
   });
 
+  $scope.searchItem = function(item){
+    console.log(item.name);
+    $scope.search = item.name;
+  }
+
+
 }]);//end of items controller
 
 
@@ -154,6 +160,7 @@ pokeApp.controller('EditController',['$scope', '$http', function($scope, $http){
     reviews: []}).then(function(response){
       return response;
     })
+    ;
   };
 }]);
 
@@ -161,12 +168,17 @@ pokeApp.controller('EditController',['$scope', '$http', function($scope, $http){
 
 var editId
 pokeApp.controller('AdminController',  ['$scope', 'storeItems', '$http', function($scope, storeItems, $http){
-  $scope.message = 'Hola! Yo Soy el Admin Controller!'
+  $scope.message = 'Hola! Yo Soy Admin Controller!'
   $http.get("http://localhost:3000/items").success(function(data){
       $scope.items = data;
   });
 
   $scope.editItem = function(item){
     editId = item.id;
+  }
+
+  $scope.searchItem = function(item){
+    console.log(item.name);
+    $scope.search = item.name;
   }
 }]);

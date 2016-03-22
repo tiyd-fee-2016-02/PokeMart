@@ -14,11 +14,11 @@
     <!-- <img src="{{items}}" alt='sprite'></img> -->
     <!-- {{items}} -->
     <ul class="items-list-holder">
-      <li class="items-list-item" ng-repeat="item in items track by $index">
+      <a href='#/items'><li class="items-list-item" ng-repeat="item in items track by $index" ng-click="searchItem(item)">
         <div class="items-list-item-name">{{items[$index].name}}:</div>
         <div class="items-list-item-price">{{items[$index].price}}</div>
         <img class="items-list-item-image" src="{{items[$index].picture_url}}">
-      </li>
+      </li></a>
     </ul>
   </div>
 
