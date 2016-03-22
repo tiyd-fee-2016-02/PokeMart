@@ -26,7 +26,7 @@ header{
   text-align: center;
   width: 500px;
   margin-top: 1em;
-  margin-left: 22em;
+  margin-left: 15em;
   margin-bottom: 2em;
 }
 
@@ -221,13 +221,13 @@ header{
 
 .items-card-view{
   vertical-align: top;
-  width: 80%;
+  width: 60%;
   display: inline-block;
   // top: 0;
   // position: fixed;
-  overflow: scroll;
+  // overflow: scroll;
   height: 710px;
-  float: right;
+  // float: right;
   // border: 1px solid blue;
 }
 

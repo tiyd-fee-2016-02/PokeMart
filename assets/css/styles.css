@@ -18,7 +18,7 @@ header {
   text-align: center;
   width: 500px;
   margin-top: 1em;
-  margin-left: 22em;
+  margin-left: 15em;
   margin-bottom: 2em; }
 
 .title {
@@ -171,11 +171,9 @@ header {
 
 .items-card-view {
   vertical-align: top;
-  width: 80%;
+  width: 60%;
   display: inline-block;
-  overflow: scroll;
-  height: 710px;
-  float: right; }
+  height: 710px; }
 
 .items-card-item {
   vertical-align: top;
