@@ -233,7 +233,7 @@ header{
 
 .items-card-item{
   vertical-align: top;
-  width: 40%;
+  width: 30%;
   background: #ccc;
   height: 200px;
   display: inline-block;
@@ -397,4 +397,39 @@ header{
 
 .edit-save-btn{
   float: right;
+}
+
+
+//create.html styling
+.create-save-btn{
+  display: inline-block;
+  background-color: #777;
+  padding: 1em 1em;
+  margin: 1em 0;
+  &:hover{
+    background-color: #555;
+    color: white;
+  }
+}
+.create-delete-btn{
+  display: inline-block;
+  float: right;
+  background-color: #777;
+  padding: 1em 1em;
+  margin: 1em 0;
+  &:hover{
+    background-color: #555;
+    color: white;
+  }
+}
+.create-back-btn{
+  background-color: $iconcolor;
+  text-align: center;
+  color: white;
+  padding: 1em 0;
+  margin: 1em 0;
+  border: solid thin darken(#aaa, 20%);
+  &:hover{
+    background-color: lighten($iconcolor, 20%);
+  }
 }

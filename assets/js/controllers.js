@@ -104,8 +104,41 @@ pokeApp.controller('CartController', ['$scope', '$http', function($scope, $http)
 
 }]);//end of cart controller
 
-pokeApp.controller('CreateController', ['$scope', function($scope){
-  $scope.message = "This is the Create Controller"
+pokeApp.controller('CreateController', ['$scope', 'storeItems', '$http', function($scope, storeItems, $http){
+  var reviews
+  storeItems.success(function(data) {
+      $scope.items = data;
+      console.log($scope.items[editId].name);
+      $('.edit-name-input').val($scope.items[editId].name);
+      $('.edit-price-input').val($scope.items[editId].price);
+      $('.edit-description-input').val($scope.items[editId].description);
+      $('.edit-image-url').val($scope.items[editId].picture_url);
+  })
+
+  $scope.saveItem = function(){
+    $http.put('http://localhost:3000/items/'+editId,
+    {id: editId,
+    name: $('.edit-name-input').val(),
+    price: $('.edit-price-input').val(),
+    description: $('.edit-description-input').val(),
+    picture_url: $('.edit-image-url').val()}).then(
+      $http.get("http://localhost:3000/cart").success(function(data){
+          $scope.items = data;
+      }));
+  };
+
+  $scope.deleteItem = function(){
+    console.log('delete clicked');
+    $http.delete('http://localhost:3000/items/'+editId).then(
+      $http.get("http://localhost:3000/items").success(function(data){
+          $scope.items = data;
+      }));
+  };
+
+
+
+// in controller
+
 }]);
 
 pokeApp.controller('EditController',['$scope', '$http', function($scope, $http){
@@ -122,12 +155,18 @@ pokeApp.controller('EditController',['$scope', '$http', function($scope, $http){
       return response;
     })
   };
-
 }]);
 
-pokeApp.controller('AdminController',  ['$scope', 'storeItems', function($scope, storeItems){
+
+
+var editId
+pokeApp.controller('AdminController',  ['$scope', 'storeItems', '$http', function($scope, storeItems, $http){
   $scope.message = 'Hola! Yo Soy el Admin Controller!'
-  storeItems.success(function(data) {
+  $http.get("http://localhost:3000/items").success(function(data){
       $scope.items = data;
   });
+
+  $scope.editItem = function(item){
+    editId = item.id;
+  }
 }]);

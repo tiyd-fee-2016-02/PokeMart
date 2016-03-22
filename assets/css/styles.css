@@ -179,7 +179,7 @@ header {
 
 .items-card-item {
   vertical-align: top;
-  width: 40%;
+  width: 30%;
   background: #ccc;
   height: 200px;
   display: inline-block;
@@ -301,5 +301,34 @@ header {
 
 .edit-save-btn {
   float: right; }
+
+.create-save-btn {
+  display: inline-block;
+  background-color: #777;
+  padding: 1em 1em;
+  margin: 1em 0; }
+  .create-save-btn:hover {
+    background-color: #555;
+    color: white; }
+
+.create-delete-btn {
+  display: inline-block;
+  float: right;
+  background-color: #777;
+  padding: 1em 1em;
+  margin: 1em 0; }
+  .create-delete-btn:hover {
+    background-color: #555;
+    color: white; }
+
+.create-back-btn {
+  background-color: #35538a;
+  text-align: center;
+  color: white;
+  padding: 1em 0;
+  margin: 1em 0;
+  border: solid thin #777777; }
+  .create-back-btn:hover {
+    background-color: #6284c3; }
 
 /*# sourceMappingURL=styles.css.map */

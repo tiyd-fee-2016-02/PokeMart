@@ -5,22 +5,14 @@
       "name": "Pokéball",
       "price": "₹200",
       "description": "catch em all",
-      "picture_url": "http://pokeapi.co/media/sprites/items/poke-ball.png",
-      "reviews": [
-        "IT REALLY DOES CATCH 'EM ALL",
-        "I USE IT EVERY DAY!!!  SO MANY WILD POKEMON!!! ALL MINE!!!"
-      ]
+      "picture_url": "http://pokeapi.co/media/sprites/items/poke-ball.png"
     },
     {
       "id": 1,
       "name": "Ultra Ball",
       "price": "₹1200",
       "description": "catch more wild pokemon",
-      "picture_url": "http://pokeapi.co/media/sprites/items/ultra-ball.png",
-      "reviews": [
-        "IT REALLY DOES CATCH 'EM ALL EVEN BETTER",
-        "I USE IT EVERY DAY!!!  SO MANY WILD POKEMON!!! ALL MINE!!!  FOREVER1111"
-      ]
+      "picture_url": "http://pokeapi.co/media/sprites/items/ultra-ball.png"
     },
     {
       "id": 2,
@@ -208,14 +200,6 @@
         "WHEN I REALLY DON'T WANNA SEE ANY POKÉMON BUT MY OWN, I USE SUPER REPEL.  IT SUPER WORKS!!!",
         "WHERE WOULD I BE WITHOUT MY SUPER REPEL?"
       ]
-    },
-    {
-      "id": 19,
-      "name": "hey ",
-      "price": "hi",
-      "description": "hello",
-      "picture_url": "a thing",
-      "reviews": []
     }
   ],
   "cart": []

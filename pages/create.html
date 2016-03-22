@@ -11,6 +11,7 @@
   <div class="edit-box">
 
     <div class="edit-info-holder">
+
       <div class="edit-name">
         Name: <input class="edit-name-input">
       </div>
@@ -23,9 +24,11 @@
       <div class="edit-image">
         <div class="edit-image">Image url: <input class="edit-image-url"></div>
       </div>
-      <div class="edit-save-btn" ng-click="saveItem()">Save</div>
-      <div class="edit-delete-btn" ng-click="deleteItem()">Delete</div>
+      <a href="#/admin"><div class="create-save-btn" ng-click="saveItem()">Save</div></a>
+      <a href='#/admin'><div class="create-delete-btn" ng-click="deleteItem()">Delete</div></a>
+      <a href="#/admin"><div class="create-back-btn">BACK TO ADMIN VIEW</div></a>
     </div>
+
 
   </div>
 </div>
