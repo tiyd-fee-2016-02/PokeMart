@@ -433,3 +433,15 @@ header{
     background-color: lighten($iconcolor, 20%);
   }
 }
+
+
+
+//admin view footer text
+.admin-footer-text{
+  text-align: center;
+  margin: 2.5em 0;
+  padding: 1em 1em;
+  &:hover{
+    background-color: lighten($iconcolor, 20%);
+  }
+}

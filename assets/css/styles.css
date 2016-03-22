@@ -331,4 +331,11 @@ header {
   .create-back-btn:hover {
     background-color: #6284c3; }
 
+.admin-footer-text {
+  text-align: center;
+  margin: 2.5em 0;
+  padding: 1em 1em; }
+  .admin-footer-text:hover {
+    background-color: #6284c3; }
+
 /*# sourceMappingURL=styles.css.map */

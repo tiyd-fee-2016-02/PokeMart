@@ -30,7 +30,7 @@
         <img class="items-card-item-image" src="{{item.picture_url}}">
         <div class="items-card-item-description">{{item.description}}</div>
         <div class="card-button-holder">
-          <a href="#/items"><div ng-click='detailValues(item)' class="card-details-button">Details</div></a><!--Add details as a modal??-->
+          <a href="#/admin"><div ng-click='detailValues(item)' class="card-details-button">Details</div></a><!--Add details as a modal??-->
           <a href="#/create"><div ng-click='editItem(item)' class="card-add-to-cart-button">Edit Item</div></a>
         </div>
       </li>
@@ -50,8 +50,8 @@
   </div>
 
   <footer class='items-footer'>
-    <ul class='items-footer-cart'>
-      <li class='footer-cart-text'></li>
+      <a href='#/items'><ul class='admin-footer-text'>CUSTOMER VIEW
+      <li class='footer-link-text'></li></a>
       <li class='footer-cart-items' ng-repeat='car in cart'>
     <img class="footer-cart-sprite" src="{{car.picture_url}}">
   </li>
