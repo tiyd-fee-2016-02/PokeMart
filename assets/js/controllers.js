@@ -128,7 +128,7 @@ pokeApp.controller('CreateController', ['$scope', 'storeItems', '$http', functio
     price: $('.edit-price-input').val(),
     description: $('.edit-description-input').val(),
     picture_url: $('.edit-image-url').val()}).then(
-      $http.get("http://localhost:3000/cart").success(function(data){
+      $http.get("http://localhost:3000/items/").success(function(data){
           $scope.items = data;
       }));
   };
@@ -136,7 +136,7 @@ pokeApp.controller('CreateController', ['$scope', 'storeItems', '$http', functio
   $scope.deleteItem = function(){
     console.log('delete clicked');
     $http.delete('http://localhost:3000/items/'+editId).then(
-      $http.get("http://localhost:3000/items").success(function(data){
+      $http.get("http://localhost:3000/items/").success(function(data){
           $scope.items = data;
       }));
   };
@@ -157,9 +157,10 @@ pokeApp.controller('EditController',['$scope', '$http', function($scope, $http){
     price: $('.edit-price-input').val(),
     description: $('.edit-description-input').val(),
     picture_url: $('.edit-image-url').val(),
-    reviews: []}).then(function(response){
-      return response;
-    })
+    reviews: []}).then(
+      $http.get("http://localhost:3000/items/").success(function(data){
+          $scope.items = data;
+      }));
     ;
   };
 }]);
